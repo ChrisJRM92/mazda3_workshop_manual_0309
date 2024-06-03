@@ -5,7 +5,12 @@ function App() {
 
   return (
     <>
-      <h2>Mazda3 workshop manual</h2>
+      <div className='container'>
+        <div className='container_lateral_menu'></div>
+        <div className='container_header'></div>
+        <div className='container_body'></div>
+        <div className='container_footer'></div>
+      </div>
     </>
   )
 }
