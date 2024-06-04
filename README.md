@@ -15,8 +15,13 @@ Supported languages:
 Deployment:
 - Vercel
 
-Disclaimer
-Mazda logo and name are property of Mazda Motor Corporation, all rights reserved
+Disclaimer:
+- Mazda logo and name are property of Mazda Motor Corporation, all rights reserved
+
+Original version:
+- Original version (need IEability)
+- [Mazda 3 2003 - 2008](https://chrisjrm92.github.io/M3_test1/)
+- [IEability](https://chromewebstore.google.com/detail/ieability-open-in-ie/moffahdcgnjnglbepimcggkjacdmpojc)
 
 --------------------------------------------------------------------------------------------------
 
