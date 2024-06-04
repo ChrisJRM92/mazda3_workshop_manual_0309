@@ -6,7 +6,7 @@ const SearchEngine = () => {
     <div className="searchBoxEngine">
       <div className="imgSearch"><BsSearch /></div>
       <form action="">
-        <input type="text" />
+        <input className='inputSearch' type="text" placeholder='Buscar...' />
       </form>
     </div>
   )

@@ -1,5 +1,24 @@
 .searchBoxEngine{
   display: flex;
-  background-color: aqua;
+  /* background-color: rgb(50, 243, 243); */
   padding: 5px 10px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #E0E0E0;
+  margin-left: 10px;
+
+  .imgSearch{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    color: #828282;
+  }
+
+  form{
+
+    .inputSearch{
+      border-style: none;
+      outline: none;
+    }
+  }
 }
