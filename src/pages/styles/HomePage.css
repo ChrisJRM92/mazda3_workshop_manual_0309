@@ -11,6 +11,55 @@
     z-index: 3;
     grid-area: 1 / 1 / 4 / 2;
     background-color: #1e1f25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container_icon_header{
+      /* background-color: aqua; */
+      width: 200px;
+      height: 100px;
+
+
+      .icon_header_grid{
+        display: grid;
+        grid-template-columns: 60px 140px;
+        grid-template-rows: 100px;
+
+        .iconsBack{
+          grid-area: 1 / 1 / 2 / 2;
+          background-color: blue;
+          display: none;
+          background-image: url(/public/mazdaLogoState1.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+        
+        .iconFront{
+          grid-area: 1 / 1 / 2 / 2;
+          /* background-color: brown; */
+          background-image: url(/public/mazdaLogoState2.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+
+        .iconLateral{
+          grid-area: 1 / 2 / 2 / 3;
+          /* background-color: blueviolet; */
+          background-image: url(/public/mazdaLogoState21.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+
+    .container_content{
+      margin-top: 50px;
+      padding: 0 20px;
+    }
   }
 
   .container_header{
@@ -57,4 +106,25 @@
       margin-right: 30px;
     }
   }
+}
+
+
+/* Reusable classes */
+
+.container_items{
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.content_icon{
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.content_description{
+  color: aliceblue;
+  font-size: 12px;
 }
