@@ -1,0 +1,32 @@
+.containerProfile{
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eeeeee;
+
+  &:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1e1f25;
+  }
+
+  .profileLink{
+    align-self: center;
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+  }
+
+  .profileDev{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-self: center;
+  }
+}
+

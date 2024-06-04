@@ -1,0 +1,60 @@
+/* ---------Main Container-------- */
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr 0;
+  grid-column-gap: 6px;
+  grid-row-gap: 3px;
+
+  .container_lateral_menu{
+    z-index: 3;
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: #1e1f25;
+  }
+
+  .container_header{
+    z-index: 2;
+    grid-area: 1 / 2 / 2 / 3;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+
+    .searchBox{
+      display: flex;
+      align-items: center;
+    }
+
+    .contentOptions{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding-right: 10px;
+    }
+  }
+
+  .container_body{
+    z-index: 1;
+    grid-area: 2 / 2 / 3 / 3;
+    /* background-color: blueviolet; */
+  }
+
+  .container_footer{
+    grid-area: 3 / 2 / 4 / 3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+    /* background-color: chocolate; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    .label_footer{
+      color: dimgrey;
+      margin-right: 30px;
+    }
+  }
+}
