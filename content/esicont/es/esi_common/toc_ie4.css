@@ -1,0 +1,60 @@
+BODY {
+	FONT-SIZE: 70.5%; CURSOR: default; FONT-FAMILY: Verdana,arial
+}
+H1 {
+	MARGIN-TOP: 10px; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0px; COLOR: navy
+}
+TABLE {
+	FONT-SIZE: 90%
+}
+LI {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: middle; LIST-STYLE-TYPE: none
+}
+LI IMG {
+	CURSOR: hand
+}
+IMG.clsNoHand {
+	CURSOR: default
+}
+IMG.noHand {
+	CURSOR: default
+}
+UL {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 15px; CURSOR: default; MARGIN-RIGHT: 15px
+}
+UL#ulRoot {
+	MARGIN-TOP: 5px; DISPLAY: list-item; MARGIN-LEFT: 8px; MARGIN-RIGHT: 15px
+}
+UL.clsShown {
+	DISPLAY: list-item
+}
+LI UL {
+	MARGIN-TOP: 0px; MARGIN-LEFT: 20px; MARGIN-RIGHT: 20px
+}
+A {
+	COLOR: #003366; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #003366; TEXT-DECORATION: underline
+}
+DIV.clsDocBody {
+	MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px
+}
+DIV.clsLoadMsg {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; PADDING-LEFT: 4px; BORDER-LEFT: black 1px solid; WIDTH: 150px; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: ivory
+}
+A.clsCurrentLI {
+	BACKGROUND-COLOR: #ff0000
+}
+A IMG {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: bottom; MARGIN-RIGHT: 5px
+}
+DIV.clsProdDoc IMG {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; VERTICAL-ALIGN: bottom; MARGIN-RIGHT: 5px
+}
+DIV.clsNavBottom IMG A {
+	FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 5px
+}
+DIV A {
+	align: middle
+}

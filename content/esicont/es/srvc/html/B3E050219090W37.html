@@ -1,0 +1,1011 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="11/06/03 20:38:09">
+    <title>CONTROL DATOS PID (FN4A-EL)</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+CONTROL DATOS PID (FN4A-EL)
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058591"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E050219090W37
+</font></div></p>
+
+<a name="wp1062699"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	1.	Conectar el WDS o instrumento equivalente al DLC-2.
+</font></p>
+
+<a name="wp1058604"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	2.	Medir el valor del PID.
+</font></p>
+<dl>
+<a name="wp1058615"> </a><dd><font color="Blue" face="Arial, Helvetica, sans-serif" size="3"><b>
+<b>Nota</b>
+</b></font></dd>
+</dl><dl>
+<a name="wp1062620"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Llevar a cabo el control de las partes por el dispositivo de salida despu&#233;s del control del PCM.
+</font></dd>
+
+<a name="wp1058636"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;La funci&#243;n CONTROL DATOS PID controla el valor calculado de las se&#241;ales de entrada/salida en el PCM. Si el valor controlado relativo a un dispositivo de salida no est&#225; conforme a  lo especificado, es necesario controlar el valor de entrada relacionado con el control de salida. Ya que el funcionamiento incorrecto de un dispositivo de salida no es indicado directamente como una anomal&#237;a del valor controlado relativo al dispositivo, es necesario controlar singularmente el dispositivo de salida usando la funci&#243;n de simulaci&#243;n.
+</font></dd>
+
+<a name="wp1058672"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Tabla de la funci&#243;n REGISTRO Y MONITOR DATOS PID<div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="1" rowspan="2">
+<a name="wp1058860"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Elemento de control (definici&#243;n)
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="2">
+<a name="wp1058862"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Unidad/condici&#243;n
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058866"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Condici&#243;n/especificaci&#243;n
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058868"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Acci&#243;n
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058870"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Terminal PCM
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059076"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Z6
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059079"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+LF
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058682"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DWN SW
+</font></div>
+
+<a name="wp1059141"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Interruptor paso a la marcha inferior)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058684"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058743"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Relaci&#243;n M, cambio a la marcha inferior: ON
+</font></div>
+
+<a name="wp1059175"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Otras: OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058746"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el conjunto palanca del cambio.
+</font></div>
+
+<a name="wp1059193"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051846102W02.html#wp1025486">CONTROL CONJUNTO PALANCA DEL CAMBIO</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1058749"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AB
+</font></div>
+</td>
+    <td>
+<a name="wp1058752"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058907"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MARCHA
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058910"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1058916"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1GR: 1
+</font></div>
+
+<a name="wp1059241"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2GR: 2
+</font></div>
+
+<a name="wp1059249"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3GR: 3
+</font></div>
+
+<a name="wp1059257"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4GR: 4
+</font></div>
+</td>
+    <td>
+<a name="wp1058919"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar los siguientes PID: 
+</font></div>
+
+<a name="wp1059272"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSA/SS1, SSB/SS2, SSC/SS3
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058922"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+N/A
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058929"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LINEDES
+</font></div>
+</td>
+    <td>
+<a name="wp1058932"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+kPa
+</font></div>
+</td>
+    <td>
+<a name="wp1058935"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+inHg
+</font></div>
+</td>
+    <td>
+<a name="wp1058938"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indica la presi&#243;n de l&#237;nea prefijada
+</font></div>
+</td>
+    <td>
+<a name="wp1058941"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar los siguientes PID: 
+</font></div>
+
+<a name="wp1059328"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFT, TFTV, TP, TR, TROD, TSS, VPWR, VSS
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058944"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+N/A
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058951"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LPS
+</font></div>
+
+<a name="wp1059362"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Electrov&#225;lvula control presi&#243;n)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058954"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1058960"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cambiar el valor actual seg&#250;n el &#225;ngulo de abertura de la mariposa
+</font></div>
+</td>
+    <td>
+<a name="wp1058963"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar la electrov&#225;lvula de control de la presi&#243;n.
+</font></div>
+
+<a name="wp1059400"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051721280W01.html#wp1025486">CONTROL ELECTROVALVULA</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1058966"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AV, 1AF
+</font></div>
+</td>
+    <td>
+<a name="wp1058969"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1H, 1G
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058973"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MNL SW
+</font></div>
+
+<a name="wp1059438"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Interruptor relaci&#243;n M)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058976"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058982"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Relaci&#243;n M: ON
+</font></div>
+
+<a name="wp1059468"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Otras: OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058985"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el conjunto palanca del cambio.
+</font></div>
+
+<a name="wp1059482"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051846102W02.html#wp1025486">CONTROL CONJUNTO PALANCA DEL CAMBIO</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1058988"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AQ
+</font></div>
+</td>
+    <td>
+<a name="wp1058991"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1O
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058995"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OSS
+</font></div>
+
+<a name="wp1059516"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Velocidad eje de salida)
+</font></div>
+</td>
+    <td>
+<a name="wp1058998"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+km/h
+</font></div>
+</td>
+    <td>
+<a name="wp1059001"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+mph
+</font></div>
+</td>
+    <td>
+<a name="wp1059004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indica la velocidad del eje de salida
+</font></div>
+</td>
+    <td>
+<a name="wp1059007"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el VSS.
+</font></div>
+
+<a name="wp1059547"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ [V&#233;ase <a  href="B3E051719010W05.html#wp1025486">CONTROL SENSOR DE VELOCIDAD VEHICULO (VSS)</a>].
+</font></div>
+</td>
+    <td>
+<a name="wp1059010"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AY
+</font></div>
+</td>
+    <td>
+<a name="wp1059013"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1J
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059017"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSA/SS1
+</font></div>
+
+<a name="wp1059583"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Electrov&#225;lvula de cambio relaci&#243;n A)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059020"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059026"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4GR: <b>99%</b>
+</font></div>
+
+<a name="wp1059622"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Otras:<b> 0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059029"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar la electrov&#225;lvula de cambio relaci&#243;n A.
+</font></div>
+
+<a name="wp1059646"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051721280W01.html#wp1025486">CONTROL ELECTROVALVULA</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1059032"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AZ
+</font></div>
+</td>
+    <td>
+<a name="wp1059035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1B
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059039"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSB/SS2
+</font></div>
+
+<a name="wp1059682"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Electrov&#225;lvula de cambio relaci&#243;n B)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059042"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059048"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1a marcha en relaci&#243;n D: <b>99%</b>
+</font></div>
+
+<a name="wp1059727"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Otras condiciones: <b>0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059051"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar la electrov&#225;lvula de cambio relaci&#243;n B.
+</font></div>
+
+<a name="wp1059752"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051721280W01.html#wp1025486">CONTROL ELECTROVALVULA</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1059054"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1BH
+</font></div>
+</td>
+    <td>
+<a name="wp1059057"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1C
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059779"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSC/SS3
+</font></div>
+
+<a name="wp1059826"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Electrov&#225;lvula de cambio relaci&#243;n C)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059782"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059788"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1GR/2GR: <b>99%</b>
+</font></div>
+
+<a name="wp1059875"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Otras condiciones: <b>0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059791"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar la electrov&#225;lvula de cambio relaci&#243;n C.
+</font></div>
+
+<a name="wp1059900"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051721280W01.html#wp1025486">CONTROL ELECTROVALVULA</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1059794"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1BD
+</font></div>
+</td>
+    <td>
+<a name="wp1059797"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1D
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059927"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFT
+</font></div>
+
+<a name="wp1059976"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Temperatura fluido cambio con diferencial)
+</font></div>
+</td>
+    <td>
+<a name="wp1059930"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176;C
+</font></div>
+</td>
+    <td>
+<a name="wp1059933"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176;F
+</font></div>
+</td>
+    <td>
+<a name="wp1059936"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indica la temperatura del fluido del cambio con diferencial
+</font></div>
+</td>
+    <td>
+<a name="wp1059939"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el sensor TFT.
+</font></div>
+
+<a name="wp1060007"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ [V&#233;ase <a  href="B3E051719010W01.html#wp1025486">CONTROL SENSOR TEMPERATURA FLUIDO CAMBIO CON DIFERENCIAL (TFT)</a>].
+</font></div>
+</td>
+    <td>
+<a name="wp1059942"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AU
+</font></div>
+</td>
+    <td>
+<a name="wp1059945"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1U
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060034"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFTV
+</font></div>
+
+<a name="wp1060085"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Tensi&#243;n se&#241;al fluido cambio con diferencial)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060037"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060146"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ATF <b>20 </b>&#176;<b>C (68 </b>&#176;<b>F)</b>: <b>3,4-3,6 V</b>
+</font></div>
+
+<a name="wp1060181"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ATF <b>130 </b>&#176;<b>C (266 </b>&#176;<b>F)</b>: <b>0,4-0,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060046"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el sensor TFT.
+</font></div>
+
+<a name="wp1060199"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ [V&#233;ase <a  href="B3E051719010W01.html#wp1025486">CONTROL SENSOR TEMPERATURA FLUIDO CAMBIO CON DIFERENCIAL (TFT)</a>].
+</font></div>
+</td>
+    <td>
+<a name="wp1060049"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AU
+</font></div>
+</td>
+    <td>
+<a name="wp1060052"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1U
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060226"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TP
+</font></div>
+
+<a name="wp1060361"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Sensor posici&#243;n mariposa)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060229"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1060235"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>12%</b>
+</font></div>
+
+<a name="wp1060418"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>75%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060238"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el sensor TP.
+</font></div>
+
+<a name="wp1060464"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ [V&#233;ase <a  href="B3E014018910W04.html#wp1025486">CONTROL DEL SENSOR DE POSICION MARIPOSA (TP) (ZJ, Z6)</a>]. [V&#233;ase <a  href="B3E014018910W05.html#wp1025486">CONTROL DEL SENSOR DE POSICION MARIPOSA (TP) (LF)</a>].
+</font></div>
+</td>
+    <td>
+<a name="wp1060241"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060244"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1060279"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060285"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0,3-1,0 V</b>
+</font></div>
+
+<a name="wp1060539"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>3,1-4,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060288"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el sensor TP.
+</font></div>
+
+<a name="wp1060589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+[V&#233;ase <a  href="B3E014018910W04.html#wp1025486">CONTROL DEL SENSOR DE POSICION MARIPOSA (TP) (ZJ, Z6)</a>]. [V&#233;ase <a  href="B3E014018910W05.html#wp1025486">CONTROL DEL SENSOR DE POSICION MARIPOSA (TP) (LF)</a>].
+</font></div>
+</td>
+    <td>
+<a name="wp1060291"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060294"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060606"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TPCT
+</font></div>
+
+<a name="wp1060673"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (posici&#243;n mariposa cerrada m&#225;s baja)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060609"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060615"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0,3-1,0 V</b>
+</font></div>
+
+<a name="wp1060747"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>3,1-4,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060618"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el sensor TP.
+</font></div>
+
+<a name="wp1060797"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+[V&#233;ase <a  href="B3E014018910W04.html#wp1025486">CONTROL DEL SENSOR DE POSICION MARIPOSA (TP) (ZJ, Z6)</a>]. [V&#233;ase <a  href="B3E014018910W05.html#wp1025486">CONTROL DEL SENSOR DE POSICION MARIPOSA (TP) (LF)</a>].
+</font></div>
+</td>
+    <td>
+<a name="wp1060621"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060624"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060814"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TP REL
+</font></div>
+
+<a name="wp1060886"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Posici&#243;n mariposa relativa)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060817"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1060823"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0%</b>
+</font></div>
+
+<a name="wp1060958"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>100%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060826"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el sensor TP.
+</font></div>
+
+<a name="wp1061003"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+[V&#233;ase <a  href="B3E014018910W04.html#wp1025486">CONTROL DEL SENSOR DE POSICION MARIPOSA (TP) (ZJ, Z6)</a>]. [V&#233;ase <a  href="B3E014018910W05.html#wp1025486">CONTROL DEL SENSOR DE POSICION MARIPOSA (TP) (LF)</a>].
+</font></div>
+</td>
+    <td>
+<a name="wp1060829"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060832"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061020"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TR
+</font></div>
+
+<a name="wp1061097"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Relaci&#243;n cambio con diferencial)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061023"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061029"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Posici&#243;n P: P
+</font></div>
+
+<a name="wp1061169"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Posici&#243;n R: R
+</font></div>
+
+<a name="wp1061179"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Posici&#243;n N: N
+</font></div>
+
+<a name="wp1061189"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Relaci&#243;n D: D
+</font></div>
+</td>
+    <td>
+<a name="wp1061032"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el interruptor TR.
+</font></div>
+
+<a name="wp1061205"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051719440W01.html#wp1025486">CONTROL INTERRUPTOR RELACION CAMBIO CON DIFERENCIAL (TR)</a>].
+</font></div>
+</td>
+    <td>
+<a name="wp1061035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+    <td>
+<a name="wp1061038"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061232"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TR SENS
+</font></div>
+
+<a name="wp1061311"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Interruptor TR)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061235"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1061241"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Posici&#243;n P: <b>4,34-4,79 V</b>
+</font></div>
+
+<a name="wp1061395"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Posici&#243;n R: <b>3,83-4,18 V</b>
+</font></div>
+
+<a name="wp1061417"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Posici&#243;n N: <b>3,05-3,50 V</b>
+</font></div>
+
+<a name="wp1061439"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Relaci&#243;n D: <b>2,23-2,66 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1061244"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el interruptor TR.
+</font></div>
+
+<a name="wp1061467"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051719440W01.html#wp1025486">CONTROL INTERRUPTOR RELACION CAMBIO CON DIFERENCIAL (TR)</a>].
+</font></div>
+</td>
+    <td>
+<a name="wp1061247"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+    <td>
+<a name="wp1061250"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1S
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061494"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TSS
+</font></div>
+
+<a name="wp1061579"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Velocidad entrada/turbina)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061497"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+rpm
+</font></div>
+</td>
+    <td>
+<a name="wp1061503"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Conmutador de arranque en ON: <b>0 rpm</b>
+</font></div>
+
+<a name="wp1061663"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Al m&#237;nimo: <b>700-800 rpm</b> (posici&#243;n P, N)
+</font></div>
+
+<a name="wp1061690"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indica velocidad entrada/turbina
+</font></div>
+</td>
+    <td>
+<a name="wp1061506"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el sensor velocidad entrada/turbina.
+</font></div>
+
+<a name="wp1061706"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051719010W03.html#wp1025486">CONTROL SENSOR VELOCIDAD ENTRADA/TURBINA</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1061509"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1O, 1K
+</font></div>
+</td>
+    <td>
+<a name="wp1061512"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1M, 1Q
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061737"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+UP SW
+</font></div>
+
+<a name="wp1061827"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Interruptor paso a la marcha superior)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061740"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1061746"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Relaci&#243;n M, cambio a la marcha superior: ON
+</font></div>
+
+<a name="wp1061922"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Otras: OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1061749"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el conjunto palanca del cambio.
+</font></div>
+
+<a name="wp1061940"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E051846102W02.html#wp1025486">CONTROL CONJUNTO PALANCA DEL CAMBIO</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1061752"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P
+</font></div>
+</td>
+    <td>
+<a name="wp1061755"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1K
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061967"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VPWR
+</font></div>
+
+<a name="wp1062059"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Tensi&#243;n positiva bater&#237;a)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061970"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1061976"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Conmutador de arranque en ON: <b>B+</b>
+</font></div>
+
+<a name="wp1062153"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Motor en marcha: <b>B+</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1061979"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el rel&#233; principal.
+</font></div>
+
+<a name="wp1062176"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E092167730W02.html#wp1025486">CONTROL RELE</a>).
+</font></div>
+
+<a name="wp1062195"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar la bater&#237;a.
+</font></div>
+
+<a name="wp1062204"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E011718520W03.html#wp1025486">CONTROL BATERIA</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1061982"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AX, 1BB, 1BG, 1BF
+</font></div>
+</td>
+    <td>
+<a name="wp1061985"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1A, 1BA, 1BE
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062241"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VSS
+</font></div>
+
+<a name="wp1062339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Velocidad veh&#237;culo)
+</font></div>
+</td>
+    <td>
+<a name="wp1062244"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+km/h
+</font></div>
+</td>
+    <td>
+<a name="wp1062247"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+mph
+</font></div>
+</td>
+    <td>
+<a name="wp1062250"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indica la velodicad del veh&#237;culo
+</font></div>
+</td>
+    <td>
+<a name="wp1062253"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el ABS HU/CM.
+</font></div>
+
+<a name="wp1062376"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E041343750W02.html#wp1025486">CONTROL ABS HU/CM</a>).
+</font></div>
+
+<a name="wp1062395"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controlar el DSC HU/CM.
+</font></div>
+
+<a name="wp1062404"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#233;ase <a  href="B3E041543750W02.html#wp1025486">CONTROL DSC HU/CM</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1062256"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1S, 1W
+</font></div>
+</td>
+    <td>
+<a name="wp1062259"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AI, 1AM
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+
+</b></font></p>
+</dl>
+<a name="wp1062621"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

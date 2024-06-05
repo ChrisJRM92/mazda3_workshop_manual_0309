@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<SCRIPT LANGUAGE="JScript" TYPE="text/javascript" >
+		<!--
+			var printmsg = "Print data is not displayed";
+		-->
+		</SCRIPT>
+		<SCRIPT LANGUAGE = "javascript" TYPE="text/javascript" SRC="../esi_common/pu_esimenu.js"></SCRIPT>
+		<SCRIPT LANGUAGE = "javascript" TYPE="text/javascript" SRC="../esi_common/pu_srvcmenu.js"></SCRIPT>
+		<SCRIPT LANGUAGE = "javascript" TYPE="text/javascript" SRC="../esi_common/multiLanguage.js"></SCRIPT>
+		<SCRIPT LANGUAGE="JScript" TYPE="text/javascript" >
+			// CRH: initialize session: if no value is found in cookie, set lang in cookie
+			if (document.cookie == "") {
+				document.cookie="lang=es;";
+			}
+			
+			var SrvcMenuList = new Array();
+			SrvcMenuList[0] = "pu_srvc_menu_es.html";
+						
+			var LeftMenuList = new Array();
+			LeftMenuList[0] = "es/srvc/html/left_menu_S01.html";
+						
+			var DefaultFileList = new Array();
+			DefaultFileList[0] = "default_S01.html";
+		</SCRIPT>
+		
+	<style stype="text/css">
+	<!--
+		a:link		{ color:#000000; }
+		a:visited	{ color:#000000; }
+		a:active	{ color:#981A1A; }
+		a:hover		{ color:#981A1A; }
+	-->
+	    </style>
+	</head>
+	<body bgcolor="#787c81" topmargin="0" leftmargin="0">
+		<table border="0" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0" ID="Table1">
+			<tr>
+				<td width="280" valign="top">
+					<img src="../../esicont/esi_common/images/top_title.png" border="0" width="262" height="54">
+				</td>
+				<!-- CRH 030602:  width="884" -->
+				<td width="800">
+					<table width="100%">
+						<tr>
+							<td>
+								<table border="1" cellpadding="2" cellspacing="0" width="320" bgcolor="white" ID="Table2" style="border-collapse: collapse" bordercolor="#000000">
+									<tr> 
+										<td align="center" valign="middle" bgcolor="#333333">
+											<font size="4" color="#ffffff">Mazda3</font>
+										</td>
+										<td align="center" valign="middle" bgcolor="#666666">
+											<font size="4" color="#ffffff">
+											<a target="_blank" href="./vin.html">
+											<font color="#ffffff">VIN</font></a></font></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table width="100%" border="1" align="left" style="border-collapse: collapse" bordercolor="#787c81" cellpadding="5" cellspacing="0" ID="Table3">
+									<tr align="center" bgcolor="#AEB1BB">
+									<!-- CRH 030527 added -->
+									<form name="frm_lang" method="post">
+										<td valign="midle" align="Center" style="border-color:#AEB1BB;" width="5%">
+											<a href="javascript:ChangeLang(0);">
+											
+											</a>
+										</td>
+																				<td width="7%">
+										</form>
+										<form name = "frm1" method="post">
+											<font size="2">
+												<a href = "javascript:PrintPage()">
+												<!-- CRH: to relative path -->
+													<img src="../../esicont/esi_common/images/print.gif" alt="Print window open" border="0" width="20" height="20">
+												</a>
+											</font>
+										</form>
+										</td>
+										<td valign="midle" align="Center" width="30%">
+											<font size="2">
+											<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" >
+											<!--
+												getStrForeword();
+											-->
+											</SCRIPT>
+											</font>
+										</td>
+										<td align="center" valign="midle" bgcolor="#333333" width="40%">
+											<font size="2" color="#ffffff">
+												CD08-XX-03LE
+											</font>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

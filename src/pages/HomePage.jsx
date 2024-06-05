@@ -8,6 +8,7 @@ import { GiSteeringWheel } from "react-icons/gi";
 import { MdAir } from "react-icons/md";
 import { MdOutlineSecurity } from "react-icons/md";
 import { IoCarSport } from "react-icons/io5";
+import { IoIosArrowBack } from "react-icons/io";
 
 import Buttom from '../components/Buttom'
 import Profile from '../components/Profile'
@@ -29,6 +30,11 @@ const HomePage = () => {
               <div className='iconFront'></div>
               <div className='iconLateral'></div>
             </div>
+          </div>
+
+          {/* Arrow buttom */}
+          <div className="arrowButtom">
+            <IoIosArrowBack />
           </div>
 
           {/* Icons content */}
@@ -86,7 +92,9 @@ const HomePage = () => {
             <Profile/>
           </div>
         </div>
-        <div className='container_body'></div>
+        <div className='container_body'>
+          <iframe className="iframeContent" name="contentIframe" src="/content/DefaultPage.html" frameborder="0"></iframe>
+        </div>
         <div className='container_footer'>
           <p className='label_footer'>Workshop Manual</p>
           <p className='label_footer'>2003 - 2008</p>

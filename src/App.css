@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+
 }
 /* ---------Reset--------- */
 body{
@@ -11,3 +12,4 @@ body{
     margin: 0;
   }
 }
+

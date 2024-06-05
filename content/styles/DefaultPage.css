@@ -1,0 +1,35 @@
+*{
+  font-family: "Poppins", sans-serif;
+
+  p{
+    margin: 0
+  };
+}
+
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .defaultContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .defaulIcon{
+      width: 500px;
+      height: 250px;
+      /* background-color: aqua; */
+      background-image: url(/content/M32003-2007.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  
+    .paragraph{
+      text-align: center;
+      font-size: 13px;
+    }
+  }
+}
