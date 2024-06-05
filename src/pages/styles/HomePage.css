@@ -18,13 +18,13 @@
     .container_icon_header{
       /* background-color: aqua; */
       width: 200px;
-      height: 100px;
+      height: 80px;
 
 
       .icon_header_grid{
         display: grid;
         grid-template-columns: 60px 140px;
-        grid-template-rows: 100px;
+        grid-template-rows: 80px;
 
         .iconsBack{
           grid-area: 1 / 1 / 2 / 2;
@@ -57,7 +57,7 @@
     }
 
     .container_content{
-      margin-top: 30px;
+      margin-top: 10px;
       padding: 0 20px;
     }
 
@@ -68,8 +68,9 @@
       border: 1px solid rgb(216, 216, 216) ;
       width: 35px;
       height: 35px;
-      position: relative;
-      right: -125px;
+      position: fixed;
+      left: 233px;
+      top: 60px;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -105,7 +106,7 @@
 
     .iframeContent{
       width: 100%;
-      height: 95%;
+      height: 93%;
     }
   }
 

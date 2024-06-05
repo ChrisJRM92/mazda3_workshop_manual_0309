@@ -1,4 +1,4 @@
-# Mazda 3 workshop manual 2003 - 2008
+# Mazda 3 workshop manual 2003 - 2009
 
 This project is an adaptation of the Mazda 3 workshop manual for current browsers.
 It is made with the following libraries.
@@ -20,7 +20,7 @@ Disclaimer:
 
 Original version:
 - Original version (need IEability)
-- [Mazda 3 2003 - 2008](https://chrisjrm92.github.io/M3_test1/)
+- [Mazda 3 2003 - 2009](https://chrisjrm92.github.io/M3_test1/)
 - [IEability](https://chromewebstore.google.com/detail/ieability-open-in-ie/moffahdcgnjnglbepimcggkjacdmpojc)
 
 --------------------------------------------------------------------------------------------------

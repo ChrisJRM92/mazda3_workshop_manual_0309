@@ -1,9 +1,9 @@
 import './styles/Buttom.css'
 
-const Buttom = ({ label }) => {
+const Buttom = ({ label, url }) => {
   return (
     <div className="componentButtoms">
-      <a href="/content/esicont/es/html/foreword.html" target='contentIframe'><button className="buttomClass">{label}</button></a>
+      <a href={url} target='contentIframe'><button className="buttomClass">{label}</button></a>
     </div>
   )
 }
