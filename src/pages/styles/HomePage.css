@@ -30,7 +30,7 @@
           grid-area: 1 / 1 / 2 / 2;
           background-color: blue;
           display: none;
-          background-image: url(/public/mazdaLogoState1.png);
+          background-image: url(/images/mazdaLogoState1.png);
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
@@ -39,7 +39,7 @@
         .iconFront{
           grid-area: 1 / 1 / 2 / 2;
           /* background-color: brown; */
-          background-image: url(/public/mazdaLogoState2.png);
+          background-image: url(/images/mazdaLogoState2.png);
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
@@ -48,7 +48,7 @@
         .iconLateral{
           grid-area: 1 / 2 / 2 / 3;
           /* background-color: blueviolet; */
-          background-image: url(/public/mazdaLogoState21.png);
+          background-image: url(/images/mazdaLogoState21.png);
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
