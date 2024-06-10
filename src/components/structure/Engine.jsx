@@ -177,7 +177,7 @@ const Engine = () => {
             <a className="Data" title="N.2 El mil se enciende (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E010318881W35.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.2 El mil se enciende (ZJ, Z6)</a>
             <a className="Data" title="N.3 No arranca (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E010318881W36.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.3 No arranca (ZJ, Z6)</a>
             <a className="Data" title="N.4 Encendido dificil/arranque largo/encendido irregular/arranque irregular (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E010318881W37.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.4 Encendido dificil/arranque largo/encendido irregular/arranque irregular (ZJ, Z6)</a>
-            <a className="Data" title="N.5 El motor se cala despues del arranque/al mínimo (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E010318881W38.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N. 5 El motor se cala despues del arranque/al mínimo (ZJ, Z6)</a>
+            <a className="Data" title="N.5 El motor se cala despues del arranque/al mínimo (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E010318881W38.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.5 El motor se cala despues del arranque/al mínimo (ZJ, Z6)</a>
             <a className="Data" title="N.6 El arranque es normal pero el motor no se enciende (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E010318881W39.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.6 El arranque es normal pero el motor no se enciende (ZJ, Z6)</a>
             <a className="Data" title="N.7 Regreso al mínimo demasiado lento (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E010318881W40.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.7 Regreso al mínimo demasiado lento (ZJ, Z6)</a>
             <a className="Data" title="N.8 Régimen irregular/vibraciones al mínimo (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E010318881W41.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.8 Régimen irregular/vibraciones al mínimo (ZJ, Z6)</a>
@@ -206,11 +206,167 @@ const Engine = () => {
         </details>
 
         <details className="content_description_2">
-          <summary className="sum2" title="Búsqueda averias según los sintomas[sistema de control motor (ZJ, Z6)]"></summary>
+          <summary className="sum2" title="Búsqueda averias según los sintomas[sistema de control motor (LF)]">Búsqueda de averias según los síntomas[sistema de control motor (LF)]</summary>
           <div className="DataLinks">
-            <a className="Data" title="" href="/content/" target="contentIframe"><i class="fa-solid fa-file-lines"></i></a>
+          <a className="Data" title="Búsqueda de averias motor según los sintomas (LF)" href="/content/esicont/es/srvc/html/B3E010318881W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Búsqueda de averias motor según los sintomas (LF)</a>
+            <a className="Data" title="Tabla de diagnóstico rápido (LF)" href="/content/esicont/es/srvc/html/B3E010318881W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Tabla de diagnóstico rápido (LF)</a>
+            <a className="Data" title="N.1 Fusible principal u otros fusibles quemados (LF)" href="/content/esicont/es/srvc/html/B3E010318881W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.1 Fusible principal u otros fusibles quemados (LF)</a>
+            <a className="Data" title="N.2 El mil se enciende (LF)" href="/content/esicont/es/srvc/html/B3E010318881W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.2 El mil se enciende (LF)</a>
+            <a className="Data" title="N.3 No arranca (LF)" href="/content/esicont/es/srvc/html/B3E010318881W05.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.3 No arranca (LF)</a>
+            <a className="Data" title="N.4 Encendido dificil/arranque largo/encendido irregular/arranque irregular (LF)" href="/content/esicont/es/srvc/html/B3E010318881W06.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.4 Encendido dificil/arranque largo/encendido irregular/arranque irregular (LF)</a>
+            <a className="Data" title="N.5 El motor se cala despues del arranque/al mínimo (LF)" href="/content/esicont/es/srvc/html/B3E010318881W07.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.5 El motor se cala despues del arranque/al mínimo (LF)</a>
+            <a className="Data" title="N.6 El arranque es normal pero el motor no se enciende (LF)" href="/content/esicont/es/srvc/html/B3E010318881W08.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.6 El arranque es normal pero el motor no se enciende (LF)</a>
+            <a className="Data" title="N.7 Regreso al mínimo demasiado lento (LF)" href="/content/esicont/es/srvc/html/B3E010318881W09.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.7 Regreso al mínimo demasiado lento (LF)</a>
+            <a className="Data" title="N.8 Régimen irregular/vibraciones al mínimo (LF)" href="/content/esicont/es/srvc/html/B3E010318881W10.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.8 Régimen irregular/vibraciones al mínimo (LF)</a>
+            <a className="Data" title="N.9 Mínimo acelerado/el motor no se apaga (LF)" href="/content/esicont/es/srvc/html/B3E010318881W11.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.9 Mínimo acelerado/el motor no se apaga (LF)</a>
+            <a className="Data" title="N.10 Mínimo bajo/el motor se cala durante la desaceleración (LF)" href="/content/esicont/es/srvc/html/B3E010318881W12.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.10 Mínimo bajo/el motor se cala durante la desaceleración (LF)</a>
+            <a className="Data" title="N.11 El motor se cala, funcionamiento irregular del motor, fallos, contragolpes/desgarres (LF)" href="/content/esicont/es/srvc/html/B3E010318881W13.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.11 El motor se cala, funcionamiento irregular del motor, fallos, contragolpes/desgarres (LF)</a>
+            <a className="Data" title="N.12 Falta/pérdida de potencia-aceleración/velocidad constante (LF)" href="/content/esicont/es/srvc/html/B3E010318881W14.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.12 Falta/pérdida de potencia-aceleración/velocidad constante (LF)</a>
+            <a className="Data" title="N.13 Martilleo de válvulas/detonación-aceleración/crucero (LF)" href="/content/esicont/es/srvc/html/B3E010318881W15.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.13 Martilleo de válvulas/detonación-aceleración/crucero (LF)</a>
+            <a className="Data" title="N.14 Excesivo consumo de combustible (LF)" href="/content/esicont/es/srvc/html/B3E010318881W16.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.14 Excesivo consumo de combustible (LF)</a>
+            <a className="Data" title="N.15 Emisiones por fuera de los parámetros legales (LF)" href="/content/esicont/es/srvc/html/B3E010318881W17.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.15 Emisiones por fuera de los parámetros legales (LF)</a>
+            <a className="Data" title="N.16 Excesivo consumo/pérdidas de aceite (LF)" href="/content/esicont/es/srvc/html/B3E010318881W18.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.16 Excesivo consumo/pérdidas de aceite (LF)</a>
+            <a className="Data" title="N.17 Problemas en el sistema de refrigeración-sobrecalentamiento (LF)" href="/content/esicont/es/srvc/html/B3E010318881W19.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.17 Problemas en el sistema de refrigeración-sobrecalentamiento (LF)</a>
+            <a className="Data" title="N.18 Problemas en el sistema de refrigeración-fallos en la calefacción (LF)" href="/content/esicont/es/srvc/html/B3E010318881W20.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.18 Problemas en el sistema de refrigeración-fallos en la calefacción (LF)</a>
+            <a className="Data" title="N.19 Emisiones de humo (LF)" href="/content/esicont/es/srvc/html/B3E010318881W21.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.19 Emisiones de humo (LF)</a>
+            <a className="Data" title="N.20 Olor a combustible (en el compartimento motor) (LF)" href="/content/esicont/es/srvc/html/B3E010318881W22.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.20 Olor a combustible (en el compartimento motor) (LF)</a>
+            <a className="Data" title="N.21 Ruidos del motor (LF)" href="/content/esicont/es/srvc/html/B3E010318881W23.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.21 Ruidos del motor (LF)</a>
+            <a className="Data" title="N.22 Problemas de vibraciones (motor) (LF)" href="/content/esicont/es/srvc/html/B3E010318881W24.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.22 Problemas de vibraciones (motor) (LF)</a>
+            <a className="Data" title="N.23 A/C no funciona suficientemente (LF)" href="/content/esicont/es/srvc/html/B3E010318881W25.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.23 A/C no funciona suficientemente (LF)</a>
+            <a className="Data" title="N.24 A/C siempre activado o compresor a/c permanentemente en función (LF)" href="/content/esicont/es/srvc/html/B3E010318881W26.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.24 A/C siempre activado o compresor a/c permanentemente en función (LF)</a>
+            <a className="Data" title="N.25 Fallo en la desactivación del a/c en condición de mariposa completamente abierta (LF)" href="/content/esicont/es/srvc/html/B3E010318881W27.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.25 Fallo en la desactivación del a/c en condición de mariposa completamente abierta (LF)</a>
+            <a className="Data" title="N.26 Olor a azufre en el escape (LF)" href="/content/esicont/es/srvc/html/B3E010318881W28.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.26 Olor a azufre en el escape (LF)</a>
+            <a className="Data" title="N.27 Estado de las bujias (LF)" href="/content/esicont/es/srvc/html/B3E010318881W29.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>N.27 Estado de las bujias (LF)</a>
+            <a className="Data" title="Búsqueda de averias, problemas intermitentes (LF)" href="/content/esicont/es/srvc/html/B3E010318881W30.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Búsqueda de averias, problemas intermitentes (LF)</a>
+            <a className="Data" title="Control funcionamiento sistema control motor (LF)" href="/content/esicont/es/srvc/html/B3E010318881W31.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control funcionamiento sistema control motor (LF)</a>
           </div>
         </details>
+
+        <details className="content_description_2">
+          <summary className="sum2" title="Mecánico[ZJ, Z6]">Mecánico[ZJ, Z6]</summary>
+          <div className="DataLinks">
+            <a className="Data" title="Ubicación componentes motor (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011015800W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ubicación componentes motor (ZJ, Z6)</a>
+            <a className="Data" title="Control correa de transmisión (ZJ, Z6) " href="/content/esicont/es/srvc/html/B3E011015800W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control correa de transmisión (ZJ, Z6) </a>
+            <a className="Data" title="Sustitucion correa de transmisión (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011015800W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitucion correa de transmisión (ZJ, Z6)</a>
+            <a className="Data" title="Control tensor automático correa de transmisión (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011015800W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control tensor automático correa de transmisión (ZJ, Z6)</a>
+            <a className="Data" title="Control juego válvulas (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011012111W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control juego válvulas (ZJ, Z6)</a>
+            <a className="Data" title="Ajuste juego válvulas (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011012111W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ajuste juego válvulas (ZJ, Z6)</a>
+            <a className="Data" title="Control de la compresión (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011001001W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control de la compresión (ZJ, Z6)</a>
+            <a className="Data" title="Remoción/instalación cadena de la distribución (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011012040W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación cadena de la distribución (ZJ, Z6)</a>
+            <a className="Data" title="Sustitución junta culata (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011010271W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución junta culata (ZJ, Z6)</a>
+            <a className="Data" title="Sustitución sello de aceite delantero (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011010602W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución sello de aceite delantero (ZJ, Z6)</a>
+            <a className="Data" title="Sustitución sello de aceite trasero (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011011399W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución sello de aceite trasero (ZJ, Z6)</a>
+            <a className="Data" title="Remoción/instalación motor (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011001001W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación motor (ZJ, Z6)</a>
+            <a className="Data" title="Desmontaje/montaje motor [ZJ, Z6]" href="/content/esicont/es/srvc/html/B3E011001001W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Desmontaje/montaje motor [ZJ, Z6]</a>
+            <a className="Data" title="Control actuador distribución variable (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011000142W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control actuador distribución variable (ZJ, Z6)</a>
+            <a className="Data" title="Remoción/instalación actuador distribución variable (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011000142W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación actuador distribución variable (ZJ, Z6)</a>
+            <a className="Data" title="Remoción/instalación válvula de control del aceite (OCV) (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011014420W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación válvula de control del aceite (OCV) (ZJ, Z6)</a>
+            <a className="Data" title="Control válvula de control del aceite (OCV) (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011014420W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control válvula de control del aceite (OCV) (ZJ, Z6)</a>
+            <a className="Data" title="Puesta a punto del motor (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011002000W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Puesta a punto del motor (ZJ, Z6)</a>
+            
+          </div>
+        </details>
+
+        <details className="content_description_2">
+          <summary className="sum2" title="">Mecánico[LF]</summary>
+          <div className="DataLinks">
+            <a className="Data" title="Ubicación componentes motor (LF)" href="/content/esicont/es/srvc/html/B3E011001002W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ubicación componentes motor (LF)</a>
+            <a className="Data" title="Control correa de transmisión (LF)" href="/content/esicont/es/srvc/html/B3E011015800W05.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control correa de transmisión (LF)</a>
+            <a className="Data" title="Sustitución correa de transmisión (LF)" href="/content/esicont/es/srvc/html/B3E011015800W06.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución correa de transmisión (LF)</a>
+            <a className="Data" title="Control tensor automático correa de transmisión (LF)" href="/content/esicont/es/srvc/html/B3E011015980W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control tensor automático correa de transmisión (LF)</a>
+            <a className="Data" title="Control juego válvulas (LF)" href="/content/esicont/es/srvc/html/B3E011012111W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control juego válvulas (LF)</a>
+            <a className="Data" title="Control juego válvulas (LF)" href="/content/esicont/es/srvc/html/B3E011012111W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control juego válvulas (LF)</a>
+            <a className="Data" title="Control de la compresión (LF)" href="/content/esicont/es/srvc/html/B3E011002000W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control de la compresión (LF)</a>
+            <a className="Data" title="Remoción/instalación cadena de la distribución (LF)" href="/content/esicont/es/srvc/html/B3E011012201W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación cadena de la distribución (LF)</a>
+            <a className="Data" title="Sustitución junta culata (LF)" href="/content/esicont/es/srvc/html/B3E011010271W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución junta culata (LF)</a>
+            <a className="Data" title="Sustitución sello de aceite delantero (LF)" href="/content/esicont/es/srvc/html/B3E011010602W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución sello de aceite delantero (LF)</a>
+            <a className="Data" title="Sustitución sello de aceite trasero (LF)" href="/content/esicont/es/srvc/html/B3E011011399W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución sello de aceite trasero (LF)</a>
+            <a className="Data" title="Remoción/instalación motor (LF)" href="/content/esicont/es/srvc/html/B3E011001001W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación motor (LF)</a>
+            <a className="Data" title="Desmontaje/montaje motor [LF]" href="/content/esicont/es/srvc/html/B3E011001001W05.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Desmontaje/montaje motor [LF]</a>
+            <a className="Data" title="Remoción/instalación placa de protección orificios bujias (LF)" href="/content/esicont/es/srvc/html/B3E011000149W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación placa de protección orificios bujias (LF)</a>
+            <a className="Data" title="Puesta a punto del motor (LF)" href="/content/esicont/es/srvc/html/B3E011001001W06.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Puesta a punto del motor (LF)</a>
+          </div>
+        </details>
+
+        <details className="content_description_2">
+          <summary className="sum2" title="">Lubricación[ZJ, Z6]</summary>
+          <div className="DataLinks">
+            <a className="Data" title="Ubicación componentes sistema de lubricación (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011101003W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ubicación componentes sistema de lubricación (ZJ, Z6)</a>
+            {/* <a className="Data" title="Ubicación componentes sistema de lubricación (LF)" href="/content/esicont/es/srvc/html/B3E011101003W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ubicación componentes sistema de lubricación (LF)</a> */}
+            <a className="Data" title="Control presión del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011101003W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control presión del aceite (ZJ, Z6)</a>
+            {/* <a className="Data" title="Control presión del aceite (LF)" href="/content/esicont/es/srvc/html/B3E011101003W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control presión del aceite (LF)</a> */}
+            <a className="Data" title="Control nivel aceite del motor (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011114001W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control nivel aceite del motor (ZJ, Z6)</a>
+            {/* <a className="Data" title="Control nivel aceite del motor (LF)" href="/content/esicont/es/srvc/html/B3E011114001W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control nivel aceite del motor (LF)</a> */}
+            <a className="Data" title="Sustitución aceite del motor (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011114001W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución aceite del motor (ZJ, Z6)</a>
+            {/* <a className="Data" title="Sustitución aceite del motor (LF)" href="/content/esicont/es/srvc/html/B3E011114001W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución aceite del motor (LF)</a> */}
+            <a className="Data" title="Sustitución filtro del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011114300W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución filtro del aceite (ZJ, Z6)</a>
+            {/* <a className="Data" title="Sustitución filtro del aceite (LF)" href="/content/esicont/es/srvc/html/B3E011114300W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución filtro del aceite (LF)</a> */}
+            <a className="Data" title="Remoción/instalación carter del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011110040W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación carter del aceite (ZJ, Z6)</a>
+            {/* <a className="Data" title="Remoción/instalación carter del aceite (LF)" href="/content/esicont/es/srvc/html/B3E011110040W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación carter del aceite (LF)</a> */}
+            <a className="Data" title="Remoción/instalación bomba del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011119220W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación bomba del aceite (ZJ, Z6)</a>
+            {/* <a className="Data" title="Remoción/instalación bomba del aceite (LF)" href="/content/esicont/es/srvc/html/B3E011119220W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación bomba del aceite (LF)</a> */}
+            <a className="Data" title="Desmontaje/montaje bomba del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011119220W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Desmontaje/montaje bomba del aceite (ZJ, Z6)</a>
+            <a className="Data" title="Control bomba del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011119220W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control bomba del aceite (ZJ, Z6)</a>
+          </div>
+        </details>
+
+        <details className="content_description_2">
+          <summary className="sum2" title="">Lubricación[LF]</summary>
+          <div className="DataLinks">
+            {/* <a className="Data" title="Ubicación componentes sistema de lubricación (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011101003W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ubicación componentes sistema de lubricación (ZJ, Z6)</a> */}
+            <a className="Data" title="Ubicación componentes sistema de lubricación (LF)" href="/content/esicont/es/srvc/html/B3E011101003W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ubicación componentes sistema de lubricación (LF)</a>
+            {/* <a className="Data" title="Control presión del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011101003W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control presión del aceite (ZJ, Z6)</a> */}
+            <a className="Data" title="Control presión del aceite (LF)" href="/content/esicont/es/srvc/html/B3E011101003W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control presión del aceite (LF)</a>
+            {/* <a className="Data" title="Control nivel aceite del motor (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011114001W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control nivel aceite del motor (ZJ, Z6)</a> */}
+            <a className="Data" title="Control nivel aceite del motor (LF)" href="/content/esicont/es/srvc/html/B3E011114001W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control nivel aceite del motor (LF)</a>
+            {/* <a className="Data" title="Sustitución aceite del motor (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011114001W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución aceite del motor (ZJ, Z6)</a> */}
+            <a className="Data" title="Sustitución aceite del motor (LF)" href="/content/esicont/es/srvc/html/B3E011114001W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución aceite del motor (LF)</a>
+            {/* <a className="Data" title="Sustitución filtro del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011114300W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución filtro del aceite (ZJ, Z6)</a> */}
+            <a className="Data" title="Sustitución filtro del aceite (LF)" href="/content/esicont/es/srvc/html/B3E011114300W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución filtro del aceite (LF)</a>
+            {/* <a className="Data" title="Remoción/instalación carter del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011110040W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación carter del aceite (ZJ, Z6)</a> */}
+            <a className="Data" title="Remoción/instalación carter del aceite (LF)" href="/content/esicont/es/srvc/html/B3E011110040W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación carter del aceite (LF)</a>
+            {/* <a className="Data" title="Remoción/instalación bomba del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011119220W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación bomba del aceite (ZJ, Z6)</a> */}
+            <a className="Data" title="Remoción/instalación bomba del aceite (LF)" href="/content/esicont/es/srvc/html/B3E011119220W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación bomba del aceite (LF)</a>
+            {/* <a className="Data" title="Desmontaje/montaje bomba del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011119220W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Desmontaje/montaje bomba del aceite (ZJ, Z6)</a> */}
+            {/* <a className="Data" title="Control bomba del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011119220W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control bomba del aceite (ZJ, Z6)</a> */}
+          </div>
+        </details>
+
+        <details className="content_description_2">
+          <summary className="sum2" title="">Sistema de refrigeración</summary>
+          <div className="DataLinks">
+            <a className="Data" title="Precauciones de mantenimiento del sistema de refrigeración" href="/content/esicont/es/srvc/html/B3E011215001W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Precauciones de mantenimiento del sistema de refrigeración</a>
+            <a className="Data" title="Control nivel líquido de enfriamiento motor" href="/content/esicont/es/srvc/html/B3E011215001W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control nivel líquido de enfriamiento motor</a>
+            <a className="Data" title="Control protección líquido de enfriamiento motor" href="/content/esicont/es/srvc/html/B3E011215001W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control protección líquido de enfriamiento motor</a>
+            <a className="Data" title="Sustitución líquido de enfriamiento motor" href="/content/esicont/es/srvc/html/B3E011200000W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Sustitución líquido de enfriamiento motor</a>
+            <a className="Data" title="Control pérdidas de líquido de enfriamiento motor" href="/content/esicont/es/srvc/html/B3E011215001W05.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control pérdidas de líquido de enfriamiento motor</a>
+            <a className="Data" title="Remoción/instalación depósito expansión líquido de enfriamiento" href="/content/esicont/es/srvc/html/B3E011215201W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación depósito expansión líquido de enfriamiento</a>
+            <a className="Data" title="Control tapón del sistema de refrigeración" href="/content/esicont/es/srvc/html/B3E011215201W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control tapón del sistema de refrigeración</a>
+            <a className="Data" title="Remoción/instalación radiador" href="/content/esicont/es/srvc/html/B3E011215200W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación radiador</a>
+            <a className="Data" title="Control conjunto motor ventilador de refrigeración" href="/content/esicont/es/srvc/html/B3E011215025W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control conjunto motor ventilador de refrigeración</a>
+          </div>
+        </details>
+
+        <details className="content_description_2">
+          <summary className="sum2" title="">Sistema de refrigeración[ZJ, Z6]</summary>
+          <div className="DataLinks">
+            <a className="Data" title="Ubicación componentes sistema de refrigeración (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011201004W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ubicación componentes sistema de refrigeración (ZJ, Z6)</a>
+            <a className="Data" title="Remoción/instalación termostato (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011215171W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación termostato (ZJ, Z6)</a>
+            <a className="Data" title="Control termostato (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011215171W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control termostato (ZJ, Z6)</a>
+            <a className="Data" title="Remoción/instalación bomba del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011215010W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación bomba del aceite (ZJ, Z6)</a>
+          </div>
+        </details>
+
+        <details className="content_description_2">
+          <summary className="sum2" title="">Sistema de refrigeración[LF]</summary>
+          <div className="DataLinks">
+            <a className="Data" title="Ubicación componentes sistema de refrigeración (LF)" href="/content/esicont/es/srvc/html/B3E011201004W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ubicación componentes sistema de refrigeración (LF)</a>
+            <a className="Data" title="Remoción/instalación termostato (LF)" href="/content/esicont/es/srvc/html/B3E011215171W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación termostato (LF)</a>
+            <a className="Data" title="Control termostato (LF)" href="/content/esicont/es/srvc/html/B3E011215171W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control termostato (LF)</a>
+            <a className="Data" title="Remoción/instalación bomba de agua (LF)" href="/content/esicont/es/srvc/html/B3E011215010W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación bomba de agua (LF)</a>
+          </div>
+        </details>
+
 
   
 
