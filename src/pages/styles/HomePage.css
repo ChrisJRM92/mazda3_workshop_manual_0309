@@ -142,7 +142,7 @@
 
 .container_items{
   display: flex;
-  cursor: pointer;
+  /* cursor: pointer; */
   align-items: center;
 
   &:hover{
@@ -176,6 +176,7 @@
 
 summary{
   list-style: none;
+  cursor: pointer;
 }
 
 details{
@@ -190,11 +191,14 @@ details{
   margin-right: 5px;
   background-repeat: no-repeat;
   background-position: center;
+
+  
 }
 
 
 .content_description_1[open] .sum1::before {
   background-image: url(/images/minus-solid.svg);
+
 }
 
 .sum2::before {
@@ -205,6 +209,7 @@ details{
   margin-right: 5px;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 

@@ -60,13 +60,13 @@ const HomePage = () => {
           <div className='container_content'>
             <GenInf/>
             <Engine/>
-            {/* <Susp/> */}
-            {/* <TransSist/> */}
-            {/* <Brakes/> */}
-            {/* <DiferChange/> */}
-            {/* <Direction/> */}
-            {/* <Air/> */}
-            {/* <RetDisp/> */}
+            <Susp/>
+            <TransSist/>
+            <Brakes/>
+            <DiferChange/>
+            <Direction/>
+            <Air/>
+            <RetDisp/>
             {/* <BodyWork/> */}
             <hr />
             <Mant/>
