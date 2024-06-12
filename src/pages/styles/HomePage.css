@@ -2,10 +2,11 @@
 .container{
   display: grid;
   height: 100vh;
-  grid-template-columns: 55px 1fr;
+  grid-template-columns: var(--width, 250px) 1fr;
   grid-template-rows: 60px 1fr 0;
   grid-column-gap: 6px;
   grid-row-gap: 3px;
+  transition: grid-template-columns .5s ease;
 
   .container_lateral_menu{
     z-index: 3;
@@ -19,19 +20,18 @@
 
     .container_icon_header{
       /* background-color: aqua; */
-      width: 200px;
       height: 80px;
 
 
       .icon_header_grid{
         display: grid;
-        grid-template-columns: 60px 140px;
+        grid-template-columns: 60px var(--iconWidth ,140px);
         grid-template-rows: 80px;
 
         .iconsBack{
           grid-area: 1 / 1 / 2 / 2;
-          background-color: blue;
-          display: none;
+          /* background-color: blue; */
+          display: var(--show, none);
           background-image: url(/images/mazdaLogoState1.png);
           background-repeat: no-repeat;
           background-size: contain;
@@ -42,6 +42,7 @@
           grid-area: 1 / 1 / 2 / 2;
           /* background-color: brown; */
           background-image: url(/images/mazdaLogoState2.png);
+          display: var(--hide, block);
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
@@ -51,6 +52,7 @@
           grid-area: 1 / 2 / 2 / 3;
           /* background-color: blueviolet; */
           background-image: url(/images/mazdaLogoState21.png);
+          display: var(--hide, block);
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
@@ -76,13 +78,29 @@
       width: 35px;
       height: 35px;
       position: fixed;
-      left: 233px;
+      left: var(--displace, 233px);
       top: 60px;
-      cursor: pointer;
       display: flex;
       align-items: center;
-      /* justify-content: center; */
+      justify-content: center;
       font-size: 21px;
+      transition: left .5s ease;
+      
+
+      .inputCheck{
+        display: none;
+      }
+
+      .arrowLabel{
+        /* background-color: #0956d2; */
+        height: 25px;
+        padding-top: 1px;
+        cursor: pointer;
+        rotate: var(--rotate, 0deg);
+        transition: rotate .5s ease;
+      }
+
+
     }
   }
 
@@ -112,7 +130,7 @@
     /* background-color: blueviolet; */
 
     .iframeContent{
-      width: 100%;
+      width: 99.5%;
       height: 93%;
       /* background-color: #0956d2; */
     }
@@ -167,6 +185,7 @@
   display: flex;
   align-items: center;
   margin: 0;
+  display: var(--hide, block);
   /* padding-left: 5px; */
   /* display: none; */
 }
@@ -270,4 +289,51 @@ details{
 
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+
+.container:has(:checked){
+  --width: 55px;
+  --widthMobile: 250px;
+  --displace: 38px;
+  --displaceMobile: 233px;
+  --rotate: 180deg;
+  --iconWidth: 0px;
+  --iconWidthMobile: 140px;
+  --show: block;
+  --showMobile: none;
+  --hide: none;
+  --hideMobile: block;
+}
+
+@media (max-width: 400px){
+  .container{
+    grid-template-columns: var(--widthMobile, 55px) 1fr;
+    .container_lateral_menu{
+      a{
+        .container_icon_header{
+          .icon_header_grid{
+            grid-template-columns: 60px var(--iconWidthMobile ,0px);
+            .iconsBack{
+              display: var(--showMobile, block);
+            }
+            .iconFront{
+              display: var(--hideMobile, none);
+            }
+            .iconLateral{
+              display: var(--hideMobile, none);
+            }
+          }
+        }
+      }
+
+      .arrowButtom{
+        left: var(--displaceMobile, 38px);
+      }
+    }
+  }
+
+  .content_description_1{
+    display: var(--hideMobile, none);
+  }
 }

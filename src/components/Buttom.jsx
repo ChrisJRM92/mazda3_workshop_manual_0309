@@ -1,6 +1,6 @@
 import './styles/Buttom.css'
 
-const Buttom = ({ label, url, printData }) => {
+const Buttom = ({ label, icon: Icon, url, printData }) => {
 
   const handleClick = () => {
     if (printData) {
@@ -14,7 +14,7 @@ const Buttom = ({ label, url, printData }) => {
 
   return (
     <div className="componentButtoms">
-      <a onClick={handleClick} href={url} target='contentIframe'><button className="buttomClass">{label}</button></a>
+      <a onClick={handleClick} href={url} target='contentIframe'><button className="buttomClass">{Icon && <Icon />}{label}</button></a>
     </div>
   )
 }

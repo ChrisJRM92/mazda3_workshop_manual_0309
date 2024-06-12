@@ -1,5 +1,5 @@
-// React icons
 import { IoIosArrowBack } from "react-icons/io";
+import { RiPrinterFill } from "react-icons/ri";
 
 // Componentes
 import Buttom from '../components/Buttom'
@@ -21,7 +21,7 @@ import Mant from "../components/structure/Mant";
 
 const HomePage = () => {
 
-  const labelsButtoms = ['Advertencia', 'Imprimir', 'VIN', 'Códigos DTC']
+  const labelsButtoms = ['Advertencia', 'imprimir', 'VIN', 'Códigos DTC']
   const url = ['/content/esicont/es/engine/A01/html/B3E000000001201.html', '/content/esicont/html/vin.html']
   const iconsComponents = ['<IoInformationCircleSharp />']
 
@@ -42,8 +42,9 @@ const HomePage = () => {
           </a>
 
           {/* Arrow buttom */}
-          <div className="arrowButtom">
-            <IoIosArrowBack />
+          <div className="arrowButtom" for='chk'>
+            <input className="inputCheck" type="checkbox" id="chk" />
+            <label className="arrowLabel" htmlFor="chk"><IoIosArrowBack/></label>
           </div>
 
           {/* Icons content */}
@@ -70,13 +71,13 @@ const HomePage = () => {
           </div>
           <div className='contentOptions'>
             <Buttom label = {labelsButtoms[0]} url={url[0]}/>
-            <Buttom label = {labelsButtoms[1]} printData = {true} />
+            <Buttom icon={RiPrinterFill} printData = {true} />
             <Buttom label = {labelsButtoms[2]} url={url[1]} />
             <Profile/>
           </div>
         </div>
         <div className='container_body'>
-          <iframe className="iframeContent" id="print" name="contentIframe" src="/content/DefaultPage.html" frameborder="0"></iframe>
+          <iframe className="iframeContent" id="print" name="contentIframe" src="/content/DefaultPage.html" frameBorder={0}></iframe>
         </div>
         <div className='container_footer'>
           <p className='label_footer'>Workshop Manual 2003 - 2009</p>

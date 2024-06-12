@@ -1,17 +1,16 @@
-.componentButtoms{
+.buttomClass{
+  padding: 5px 10px;
+  font-weight: 500;
+  background-color: #eeeeee;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 13px;
+  text-align: center;
 
-  .buttomClass{
-    padding: 5px 10px;
-    font-weight: 500;
-    background-color: #eeeeee;
-    border-style: none;
-    border-radius: 5px;
-
-    &:hover{
-      background-color: #1e1f25;
-      color: #eeeeee;
-      cursor: pointer;
-      transition: background-color .4s ease;
-    }
+  &:hover{
+    background-color: #1e1f25;
+    color: #eeeeee;
+    cursor: pointer;
+    transition: background-color .4s ease;
   }
 }
