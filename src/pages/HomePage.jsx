@@ -67,7 +67,7 @@ const HomePage = () => {
             <Direction/>
             <Air/>
             <RetDisp/>
-            {/* <BodyWork/> */}
+            <BodyWork/>
             <hr />
             <Mant/>
           </div>

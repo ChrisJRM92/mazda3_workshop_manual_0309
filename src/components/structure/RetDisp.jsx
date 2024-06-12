@@ -58,9 +58,41 @@ const RetDisp = () => {
         </details>
 
         <details className="content_description_2">
-          <summary className="sum2" title=""></summary>
+          <summary className="sum2" title="Sistema airbag">Sistema airbag</summary>
           <div className="DataLinks">
-            <a className="Data" title="" href="/content/" target="contentIframe"><i class="fa-solid fa-file-lines"></i></a>
+            <a className="Data" title="Control SST (herramienta de desactivación)" href="/content/esicont/es/srvc/html/B3E081001046W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control SST (herramienta de desactivación)</a>
+            <a className="Data" title="Ubicación componentes " href="/content/esicont/es/srvc/html/B3E081001046W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ubicación componentes </a>
+            <a className="Data" title="Precauciones de mantenimiento" href="/content/esicont/es/srvc/html/B3E081001046W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Precauciones de mantenimiento</a>
+            <a className="Data" title="Precauciones de mantenimiento" href="/content/esicont/es/srvc/html/B3E081001046W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Precauciones de mantenimiento</a>
+            <a className="Data" title="Remoción/instalación módulo airbag lado conductor" href="/content/esicont/es/srvc/html/B3E081057010W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación módulo airbag lado conductor</a>
+            <a className="Data" title="Remoción/instalación módulo airbag lado pasajero" href="/content/esicont/es/srvc/html/B3E081057050W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación módulo airbag lado pasajero</a>
+            <a className="Data" title="Remoción/instalación módulo airbag lateral " href="/content/esicont/es/srvc/html/B3E081000147W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación módulo airbag lateral </a>
+            <a className="Data" title="Remoción/instalación módulo airbag tipo cortina" href="/content/esicont/es/srvc/html/B3E081000171W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación módulo airbag tipo cortina</a>
+            <a className="Data" title="Remoción/instalación sensor de colisión" href="/content/esicont/es/srvc/html/B3E081000145W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación sensor de colisión</a>
+            <a className="Data" title="Remoción/instalación módulo de control SAS" href="/content/esicont/es/srvc/html/B3E081057030W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación módulo de control SAS</a>
+            <a className="Data" title="Configuración módulo de control SAS" href="/content/esicont/es/srvc/html/B3E081057030W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Configuración módulo de control SAS</a>
+            <a className="Data" title="Remoción/instalación sensor airbag lateral" href="/content/esicont/es/srvc/html/B3E081000146W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación sensor airbag lateral</a>
+            <a className="Data" title="Remoción/instalación espiral de conexión" href="/content/esicont/es/srvc/html/B3E081066123W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación espiral de conexión</a>
+            <a className="Data" title="Ajuste espiral de conexión" href="/content/esicont/es/srvc/html/B3E081066123W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Ajuste espiral de conexión</a>
+            <a className="Data" title="Control espiral de conexión" href="/content/esicont/es/srvc/html/B3E081066123W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control espiral de conexión</a>
+            <a className="Data" title="Remoción/instalación interruptor de desactivación airbag lado pasajero (PAD)" href="/content/esicont/es/srvc/html/B3E081066123W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación interruptor de desactivación airbag lado pasajero (PAD)</a>
+            <a className="Data" title="Control del interruptor de desactivación del airbag del pasajero (PAD)" href="/content/esicont/es/srvc/html/B3E081066123W05.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control del interruptor de desactivación del airbag del pasajero (PAD)</a>
+            <a className="Data" title="Procedimiento de activaciÓn mÓdulo airbag y enganche delantero del pretensor" href="/content/esicont/es/srvc/html/B3E081057000W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Procedimiento de activaciÓn mÓdulo airbag y enganche delantero del pretensor</a>
+            <a className="Data" title="Procedimiento de desguace mÓdulo airbag y enganche delantero del pretensor" href="/content/esicont/es/srvc/html/B3E081057000W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Procedimiento de desguace mÓdulo airbag y enganche delantero del pretensor</a>
+          </div>
+        </details>
+
+        <details className="content_description_2">
+          <summary className="sum2" title="Cinturon de seguridad">Cinturon de seguridad</summary>
+          <div className="DataLinks">
+            <a className="Data" title="UbicaciÓn componentes" href="/content/esicont/es/srvc/html/B3E081157630W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>UbicaciÓn componentes</a>
+            <a className="Data" title="Remoción/instalación cinturones de seguridad delanteros" href="/content/esicont/es/srvc/html/B3E081157630W02.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación cinturones de seguridad delanteros</a>
+            <a className="Data" title="Remoción/instalación cinturon de seguridad trasero" href="/content/esicont/es/srvc/html/B3E081157630W04.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación cinturon de seguridad trasero</a>
+            <a className="Data" title="Remoción/instalación cinturones de seguridad asiento central trasero" href="/content/esicont/es/srvc/html/B3E081157630W06.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación cinturones de seguridad asiento central trasero</a>
+            <a className="Data" title="Remoción/instalación enganche delantero" href="/content/esicont/es/srvc/html/B3E081157620W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación enganche delantero</a>
+            <a className="Data" title="Remoción/instalación enganche trasero" href="/content/esicont/es/srvc/html/B3E081157620W03.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación enganche trasero</a>
+            <a className="Data" title="Control cinturones de seguridad" href="/content/esicont/es/srvc/html/B3E081157630W05.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Control cinturones de seguridad</a>
+            <a className="Data" title="Remoción/instalación anclaje asiento para niños" href="/content/esicont/es/srvc/html/B3E081100117W01.html" target="contentIframe"><i class="fa-solid fa-file-lines"></i>Remoción/instalación anclaje asiento para niños</a>
           </div>
         </details>
 
