@@ -1,16 +1,7 @@
-
-
-
-
-
-
-
-
-
-
+// React icons
 import { IoIosArrowBack } from "react-icons/io";
 
-
+// Componentes
 import Buttom from '../components/Buttom'
 import Profile from '../components/Profile'
 import SearchEngine from '../components/SearchEngine'
@@ -30,11 +21,10 @@ import Mant from "../components/structure/Mant";
 
 const HomePage = () => {
 
-  const labelsButtoms = ['Advertencia', 'Imprimir', 'VIN']
+  const labelsButtoms = ['Advertencia', 'Imprimir', 'VIN', 'Códigos DTC']
   const url = ['/content/esicont/es/engine/A01/html/B3E000000001201.html', '/content/esicont/html/vin.html']
   const iconsComponents = ['<IoInformationCircleSharp />']
 
-  // /content/esicont/es/html/foreword.html
 
   return (
     <>
@@ -73,21 +63,20 @@ const HomePage = () => {
           </div>
         </div>
 
-        
-
         <div className='container_header'>
           <div className='searchBox'>
-            <SearchEngine/>
+            {/* <SearchEngine/> */}
+            {/* <Buttom label = {labelsButtoms[3]}/> */}
           </div>
           <div className='contentOptions'>
             <Buttom label = {labelsButtoms[0]} url={url[0]}/>
-            <Buttom label = {labelsButtoms[1]} />
+            <Buttom label = {labelsButtoms[1]} printData = {true} />
             <Buttom label = {labelsButtoms[2]} url={url[1]} />
             <Profile/>
           </div>
         </div>
         <div className='container_body'>
-          <iframe className="iframeContent" name="contentIframe" src="/content/DefaultPage.html" frameborder="0"></iframe>
+          <iframe className="iframeContent" id="print" name="contentIframe" src="/content/DefaultPage.html" frameborder="0"></iframe>
         </div>
         <div className='container_footer'>
           <p className='label_footer'>Workshop Manual 2003 - 2009</p>

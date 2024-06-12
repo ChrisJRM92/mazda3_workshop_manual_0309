@@ -21,7 +21,7 @@ body{
     .defaulIcon{
       width: 500px;
       height: 250px;
-      /* background-color: aqua; */
+      background-color: aqua;
       background-image: url(/content/M32003-2007.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -30,6 +30,17 @@ body{
     .paragraph{
       text-align: center;
       font-size: 13px;
+    }
+  }
+}
+
+@media  (max-width: 550px){
+  body{
+    .defaultContainer{
+      .defaulIcon{
+        width: 45vh;
+        height: calc(50vh/2);
+      }
     }
   }
 }
