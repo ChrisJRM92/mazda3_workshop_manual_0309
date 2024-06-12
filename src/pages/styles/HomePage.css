@@ -161,8 +161,9 @@
 
 .container_items{
   display: flex;
-  /* cursor: pointer; */
   align-items: center;
+  height: 40px;
+  /* background-color: #0956d2; */
 
   &:hover{
     /* background-color: #464957; */
