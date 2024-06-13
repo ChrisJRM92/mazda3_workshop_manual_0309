@@ -1,11 +1,11 @@
-import { MdOutlineVideoSettings } from "react-icons/md";
+import { LuCircuitBoard } from "react-icons/lu";
 
 const VideoInfo = () => {
   return (
-    <a href="https://club.autodoc.es/manuals/mazda/3/3-bk" target="_blank">
+    <a href="/public/content/WiringDiagram.html" target="contentIframe">
       <div className="container_items">
-        <p className="content_icon"><MdOutlineVideoSettings /></p>
-        <span className="content_description_1">Video mantenimiento</span>
+        <p className="content_icon"><LuCircuitBoard /></p>
+        <span className="content_description_1">Cableado eléctrico</span>
       </div>
     </a>
   )
