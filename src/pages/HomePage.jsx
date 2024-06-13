@@ -17,6 +17,7 @@ import Air from "../components/structure/Air";
 import RetDisp from "../components/structure/RetDisp";
 import BodyWork from "../components/structure/BodyWork";
 import Mant from "../components/structure/Mant";
+import VideoInfo from "../components/structure/VideoInfo";
 
 
 const HomePage = () => {
@@ -61,12 +62,14 @@ const HomePage = () => {
             <BodyWork/>
             <hr />
             <Mant/>
+            <br />
+            <VideoInfo/>
           </div>
         </div>
 
         <div className='container_header'>
           <div className='searchBox'>
-            {/* <SearchEngine/> */}
+            <SearchEngine/>
             {/* <Buttom label = {labelsButtoms[3]}/> */}
           </div>
           <div className='contentOptions'>
@@ -80,7 +83,7 @@ const HomePage = () => {
           <iframe className="iframeContent" id="print" name="contentIframe" src="/content/DefaultPage.html" frameBorder={0}></iframe>
         </div>
         <div className='container_footer'>
-          <p className='label_footer'>Workshop Manual 2003 - 2009</p>
+          <p className='label_footer'>Versión V1.1.2</p>
           {/* <p className='label_footer'>2003 - 2008</p> */}
         </div>
       </div>
