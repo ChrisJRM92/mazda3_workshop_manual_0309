@@ -18,7 +18,7 @@ const SearchEngine = () => {
     //   </form>
     // </div>
     <div className="componentButtoms">
-      <a href='/public/content/dtc.html' target='contentIframe'><button className="buttomClass"><BiSolidError/> DTCs</button></a>
+      <a href='content/dtc.html' target='contentIframe'><button className="buttomClass"><BiSolidError/> DTCs</button></a>
     </div>
   )
 }
