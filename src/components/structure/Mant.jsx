@@ -2,7 +2,7 @@ import { MdContentPasteSearch } from "react-icons/md";
 
 const Mant = () => {
   return (
-    <a href="/public/content/UserManual.html" target="contentIframe">
+    <a href="content/UserManual.html" target="contentIframe">
       <div className="container_items">
         <p className="content_icon"><MdContentPasteSearch /></p>
         <span className="content_description_1">Mantenimiento preventivo</span>
