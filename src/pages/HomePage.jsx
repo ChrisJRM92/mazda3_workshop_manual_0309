@@ -19,6 +19,8 @@ import BodyWork from "../components/structure/BodyWork";
 import Mant from "../components/structure/Mant";
 import VideoInfo from "../components/structure/VideoInfo";
 
+import GenInfTest from "../components/structure/GenInfTest";
+
 
 const HomePage = () => {
 
@@ -62,8 +64,9 @@ const HomePage = () => {
             <BodyWork/>
             <hr />
             <Mant/>
-            <br />
             <VideoInfo/>
+            {/* <GenInfTest/> */}
+
           </div>
         </div>
 
@@ -83,7 +86,7 @@ const HomePage = () => {
           <iframe className="iframeContent" id="print" name="contentIframe" src="/content/DefaultPage.html" frameBorder={0}></iframe>
         </div>
         <div className='container_footer'>
-          <p className='label_footer'>Versión V1.5.4</p>
+          <p className='label_footer'>Versión V1.6.2</p>
           {/* <p className='label_footer'>2003 - 2008</p> */}
         </div>
       </div>

@@ -99,8 +99,6 @@
         rotate: var(--rotate, 0deg);
         transition: rotate .5s ease;
       }
-
-
     }
   }
 
@@ -162,11 +160,12 @@
 .container_items{
   display: flex;
   align-items: center;
-  /* height: 40px; */
+  margin: 2px 0 2px 0;
+  /* height: auto; */
   /* background-color: #0956d2; */
 
   &:hover{
-    /* background-color: #464957; */
+    background-color: #327aff;
     border-radius: 5px;
   }
 }
@@ -178,8 +177,14 @@
   justify-content: center;
   /* background-color: aqua; */
   font-size: 25px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   padding-left: 5px;
   padding-right: 5px;
+
+  .chk_component{
+    display: flex;
+  }
 }
 
 .content_description_1{
@@ -188,10 +193,8 @@
   display: flex;
   align-items: center;
   margin: 0;
-  display: var(--hide, block);
-  /* padding-left: 5px; */
-  /* display: none; */
 }
+
 
 .content_description_2{
   padding-left: 10px;
@@ -208,36 +211,37 @@ details{
 
 .sum1::before {
   content: '';
-  background-image: url(/images/plus-solid.svg);
+  background-image: url(/images/angle-down-solid.svg);
   filter: invert(100%);
   padding-left: 10px;
   margin-right: 5px;
   background-repeat: no-repeat;
   background-position: center;
-
-  
+  transition: background-image 0.5s ease;
 }
 
 
 .content_description_1[open] .sum1::before {
-  background-image: url(/images/minus-solid.svg);
-
+  background-image: url(/images/angle-up-solid.svg);
+  transition: background-image 0.5s ease;
 }
 
 .sum2::before {
   content: '';
-  background-image: url(/images/plus-solid.svg);
+  background-image: url(/images/angle-down-solid.svg);
   filter: invert(100%);
   padding-left: 10px;
   margin-right: 5px;
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-image 0.5s ease;
 
 }
 
 
 .content_description_2[open] .sum2::before {
-  background-image: url(/images/minus-solid.svg);
+  background-image: url(/images/angle-up-solid.svg);
+  transition: background-image 0.5s ease;
 }
 
 .DataLinks{
@@ -310,6 +314,10 @@ details{
 }
 
 @media (max-width: 400px){
+  .container:has(:checked){
+    --rotateMobile: 0deg;
+  }
+  
   .container{
     grid-template-columns: var(--widthMobile, 55px) 1fr;
     .container_lateral_menu{
@@ -332,6 +340,11 @@ details{
 
       .arrowButtom{
         left: var(--displaceMobile, 38px);
+
+        .arrowLabel{
+          rotate: var(--rotateMobile, 180deg)
+        }
+        
       }
     }
   }

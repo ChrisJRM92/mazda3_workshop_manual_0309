@@ -3,7 +3,7 @@ import { GiSpring } from "react-icons/gi";
 const Susp = () => {
   return (
     <div className="container_items">
-      <p className="content_icon"><label htmlFor="chk"><GiSpring /></label></p>
+      <p className="content_icon"><label className="chk_component" htmlFor="chk"><GiSpring /></label></p>
       <details className="content_description_1">
         <summary className="sum1">Suspenciones</summary>
 

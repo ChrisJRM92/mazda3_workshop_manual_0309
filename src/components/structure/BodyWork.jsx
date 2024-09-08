@@ -3,7 +3,7 @@ import { IoCarSport } from "react-icons/io5";
 const BodyWork = () => {
   return (
     <div className="container_items">
-      <p className="content_icon"><label htmlFor="chk"><IoCarSport /></label></p>
+      <p className="content_icon"><label className="chk_component" htmlFor="chk"><IoCarSport /></label></p>
       <details className="content_description_1">
         <summary className="sum1">Carroceria y accesorios</summary>
 
