@@ -3,7 +3,7 @@ import { GiSteeringWheel } from "react-icons/gi";
 const Direction = () => {
   return (
     <div className="container_items">
-      <p className="content_icon"><label htmlFor="chk"><GiSteeringWheel /></label></p>
+      <p className="content_icon"><label className="chk_component" htmlFor="chk"><GiSteeringWheel /></label></p>
       <details className="content_description_1">
         <summary className="sum1">Dirección</summary>
 

@@ -3,7 +3,7 @@ import { FaGears } from "react-icons/fa6";
 const TransSist = () => {
   return (
     <div className="container_items">
-      <p className="content_icon"><label htmlFor="chk"><FaGears /></label></p>
+      <p className="content_icon"><label className="chk_component" htmlFor="chk"><FaGears /></label></p>
       <details className="content_description_1">
         <summary className="sum1">Sistema de transmisión/eje</summary>
 
@@ -59,15 +59,6 @@ const TransSist = () => {
             <a className="Data" title="Desmontaje/montaje (junta doble desalineada) semieje" href="/content/esicont/es/srvc/html/B3E031325501W01.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Desmontaje/montaje (junta doble desalineada) semieje</a>
           </div>
         </details>
-
-        <details className="content_description_2">
-          <summary className="sum2" title=""></summary>
-          <div className="DataLinks">
-            <a className="Data" title="" href="/content/" target="contentIframe"><i className="fa-solid fa-file-lines"></i></a>
-          </div>
-        </details>
-
-
       </details>
     </div>
   )

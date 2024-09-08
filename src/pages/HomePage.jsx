@@ -62,7 +62,6 @@ const HomePage = () => {
             <BodyWork/>
             <hr />
             <Mant/>
-            <br />
             <VideoInfo/>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 const RetDisp = () => {
   return (
     <div className="container_items">
-      <p className="content_icon"><label htmlFor="chk"><MdOutlineSecurity /></label></p>
+      <p className="content_icon"><label className="chk_component" htmlFor="chk"><MdOutlineSecurity /></label></p>
       <details className="content_description_1">
         <summary className="sum1">Dispositivos de retención </summary>
 

@@ -162,11 +162,12 @@
 .container_items{
   display: flex;
   align-items: center;
-  /* height: 40px; */
+  margin: 2px 0 2px 0;
+  /* height: auto; */
   /* background-color: #0956d2; */
 
   &:hover{
-    /* background-color: #464957; */
+    background-color: #327aff;
     border-radius: 5px;
   }
 }
@@ -178,8 +179,14 @@
   justify-content: center;
   /* background-color: aqua; */
   font-size: 25px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   padding-left: 5px;
   padding-right: 5px;
+
+  .chk_component{
+    display: flex;
+  }
 }
 
 .content_description_1{
@@ -208,36 +215,37 @@ details{
 
 .sum1::before {
   content: '';
-  background-image: url(/images/plus-solid.svg);
+  background-image: url(/images/angle-down-solid.svg);
   filter: invert(100%);
   padding-left: 10px;
   margin-right: 5px;
   background-repeat: no-repeat;
   background-position: center;
-
-  
+  transition: background-image 0.5s ease;
 }
 
 
 .content_description_1[open] .sum1::before {
-  background-image: url(/images/minus-solid.svg);
-
+  background-image: url(/images/angle-up-solid.svg);
+  transition: background-image 0.5s ease;
 }
 
 .sum2::before {
   content: '';
-  background-image: url(/images/plus-solid.svg);
+  background-image: url(/images/angle-down-solid.svg);
   filter: invert(100%);
   padding-left: 10px;
   margin-right: 5px;
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-image 0.5s ease;
 
 }
 
 
 .content_description_2[open] .sum2::before {
-  background-image: url(/images/minus-solid.svg);
+  background-image: url(/images/angle-up-solid.svg);
+  transition: background-image 0.5s ease;
 }
 
 .DataLinks{

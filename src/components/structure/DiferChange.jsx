@@ -3,7 +3,7 @@ import { GiGearStickPattern } from "react-icons/gi";
 const DiferChange = () => {
   return (
     <div className="container_items">
-      <p className="content_icon"><label htmlFor="chk"><GiGearStickPattern /></label></p>
+      <p className="content_icon"><label className="chk_component" htmlFor="chk"><GiGearStickPattern /></label></p>
       <details className="content_description_1">
         <summary className="sum1">Cambio/cambio con diferencial </summary>
 
