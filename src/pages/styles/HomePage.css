@@ -305,7 +305,6 @@ details{
   --displace: 38px;
   --displaceMobile: 233px;
   --rotate: 180deg;
-  --rotateMobile: 0deg;
   --iconWidth: 0px;
   --iconWidthMobile: 140px;
   --show: block;
@@ -315,6 +314,10 @@ details{
 }
 
 @media (max-width: 400px){
+  .container:has(:checked){
+    --rotateMobile: 0deg;
+  }
+  
   .container{
     grid-template-columns: var(--widthMobile, 55px) 1fr;
     .container_lateral_menu{
@@ -337,7 +340,11 @@ details{
 
       .arrowButtom{
         left: var(--displaceMobile, 38px);
-        --rotateMobile: 180deg;
+
+        .arrowLabel{
+          rotate: var(--rotateMobile, 180deg)
+        }
+        
       }
     }
   }
