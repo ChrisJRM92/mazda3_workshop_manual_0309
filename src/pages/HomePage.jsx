@@ -86,7 +86,7 @@ const HomePage = () => {
           <iframe className="iframeContent" id="print" name="contentIframe" src="/content/DefaultPage.html" frameBorder={0}></iframe>
         </div>
         <div className='container_footer'>
-          <p className='label_footer'>Versión V1.5.4</p>
+          <p className='label_footer'>Versión V1.5.7</p>
           {/* <p className='label_footer'>2003 - 2008</p> */}
         </div>
       </div>
