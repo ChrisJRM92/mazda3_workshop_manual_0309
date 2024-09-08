@@ -19,6 +19,8 @@ import BodyWork from "../components/structure/BodyWork";
 import Mant from "../components/structure/Mant";
 import VideoInfo from "../components/structure/VideoInfo";
 
+import GenInfTest from "../components/structure/GenInfTest";
+
 
 const HomePage = () => {
 
@@ -63,6 +65,8 @@ const HomePage = () => {
             <hr />
             <Mant/>
             <VideoInfo/>
+            {/* <GenInfTest/> */}
+
           </div>
         </div>
 
