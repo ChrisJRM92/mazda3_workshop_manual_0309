@@ -99,8 +99,6 @@
         rotate: var(--rotate, 0deg);
         transition: rotate .5s ease;
       }
-
-
     }
   }
 
@@ -307,6 +305,7 @@ details{
   --displace: 38px;
   --displaceMobile: 233px;
   --rotate: 180deg;
+  --rotateMobile: 0deg;
   --iconWidth: 0px;
   --iconWidthMobile: 140px;
   --show: block;
@@ -338,6 +337,7 @@ details{
 
       .arrowButtom{
         left: var(--displaceMobile, 38px);
+        --rotateMobile: 180deg;
       }
     }
   }

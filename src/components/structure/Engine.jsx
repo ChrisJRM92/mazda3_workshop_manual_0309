@@ -367,9 +367,10 @@ const Engine = () => {
           <summary className="sum2" title="Sistema de refrigeración[ZJ, Z6]">Sistema de refrigeración[ZJ, Z6]</summary>
           <div className="DataLinks">
             <a className="Data" title="Ubicación componentes sistema de refrigeración (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011201004W01.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Ubicación componentes sistema de refrigeración (ZJ, Z6)</a>
+            <a className="Data" title="Detalle ubicación componentes sistema de refrigeración (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011201004W01_NEW_DATA.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Detalle ubicación componentes sistema de refrigeración (ZJ, Z6)</a>
             <a className="Data" title="Remoción/instalación termostato (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011215171W01.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Remoción/instalación termostato (ZJ, Z6)</a>
             <a className="Data" title="Control termostato (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011215171W03.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Control termostato (ZJ, Z6)</a>
-            <a className="Data" title="Remoción/instalación bomba del aceite (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011215010W01.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Remoción/instalación bomba del aceite (ZJ, Z6)</a>
+            <a className="Data" title="Remoción/instalación bomba de agua (ZJ, Z6)" href="/content/esicont/es/srvc/html/B3E011215010W01.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Remoción/instalación bomba de agua (ZJ, Z6)</a>
           </div>
         </details>
 
@@ -377,6 +378,7 @@ const Engine = () => {
           <summary className="sum2" title="Sistema de refrigeración[LF]">Sistema de refrigeración[LF]</summary>
           <div className="DataLinks">
             <a className="Data" title="Ubicación componentes sistema de refrigeración (LF)" href="/content/esicont/es/srvc/html/B3E011201004W02.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Ubicación componentes sistema de refrigeración (LF)</a>
+            <a className="Data" title="Detalle ubicación componentes sistema de refrigeración (LF)" href="/content/esicont/es/srvc/html/B3E011201004W02_NEW_DATA.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Detalle ubicación componentes sistema de refrigeración (LF)</a>
             <a className="Data" title="Remoción/instalación termostato (LF)" href="/content/esicont/es/srvc/html/B3E011215171W02.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Remoción/instalación termostato (LF)</a>
             <a className="Data" title="Control termostato (LF)" href="/content/esicont/es/srvc/html/B3E011215171W04.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Control termostato (LF)</a>
             <a className="Data" title="Remoción/instalación bomba de agua (LF)" href="/content/esicont/es/srvc/html/B3E011215010W02.html" target="contentIframe"><i className="fa-solid fa-file-lines"></i>Remoción/instalación bomba de agua (LF)</a>
