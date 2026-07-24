@@ -6,13 +6,13 @@ const getTheme = (mode) => createTheme({
     primary: { main: '#0956d2' },
     ...(mode === 'dark'
       ? {
-          background: { default: '#121212', paper: '#1e1f25' },
-          text: { primary: '#f0f8ff', secondary: '#b0b3bd' },
-        }
+        background: { default: '#121212', paper: '#181818' },
+        text: { primary: '#f0f8ff', secondary: '#b0b3bd' },
+      }
       : {
-          background: { default: '#f4f5f7', paper: '#ffffff' },
-          text: { primary: '#1a1a1a', secondary: '#5f6368' },
-        }),
+        background: { default: '#f4f5f7', paper: '#ffffff' },
+        text: { primary: '#1a1a1a', secondary: '#5f6368' },
+      }),
   },
   typography: {
     fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
@@ -35,7 +35,7 @@ const getTheme = (mode) => createTheme({
         '*::-webkit-scrollbar-thumb': {
           background: mode === 'dark' ? '#464957' : '#c1c1c1',
           borderRadius: 6,
-          border: mode === 'dark' ? '2px solid #1e1f25' : '2px solid #f4f5f7',
+          border: mode === 'dark' ? '2px solid #1e1f25' : '1px solid #f4f5f7',
         },
         '*::-webkit-scrollbar-thumb:hover': {
           background: '#0956d2',

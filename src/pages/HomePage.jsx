@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Box, Drawer, AppBar, Toolbar, IconButton, Typography, useMediaQuery } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
-import { MdMenu } from 'react-icons/md'
+import { MdMenu, MdHome } from 'react-icons/md'
 import { RiPrinterFill } from 'react-icons/ri'
 import { BiSolidError } from 'react-icons/bi'
 
@@ -22,6 +22,7 @@ const HomePage = ({ mode, setMode }) => {
   const urls = [
     '/content/esicont/es/engine/A01/html/B3E000000001201.html',
     '/content/esicont/html/vin.html',
+    '/content/DefaultPage.html',
   ]
 
   const handleMenuClick = () => (isMobile ? setMobileOpen((p) => !p) : setCollapsed((p) => !p))
@@ -49,7 +50,6 @@ const HomePage = ({ mode, setMode }) => {
           },
         }}
       >
-        {/* 🟢 SE PASA EL PROP 'mode' AL SIDEBAR PARA RECONOCER MODO CLARO/OSCURO */}
         <Sidebar
           collapsed={!isMobile && collapsed}
           onExpandRequest={handleExpandRequest}
@@ -59,16 +59,35 @@ const HomePage = ({ mode, setMode }) => {
 
       <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', minWidth: 0 }}>
         <AppBar position="static" color="inherit" elevation={1}>
-          <Toolbar sx={{ justifyContent: 'space-between', gap: 1, flexWrap: 'wrap' }}>
+          <Toolbar sx={{ justifyContent: 'space-between', gap: 1, flexWrap: 'nowrap' }}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-              <IconButton onClick={handleMenuClick}><MdMenu size={22} /></IconButton>
-              <ButtonMenu label="DTCs" icon={BiSolidError} url="/content/dtc.html" color="warning" />            </Box>
+              <IconButton onClick={handleMenuClick}>
+                <MdMenu size={22} />
+              </IconButton>
+
+              {/* Botón Home */}
+              <ButtonMenu
+                icon={MdHome}
+                url={urls[2]}
+                target="contentIframe"
+              />
+
+              {/* 🟢 Botón DTCs corregido: label siempre presente */}
+              <ButtonMenu
+                icon={BiSolidError}
+                label="DTCs"
+                url="/content/dtc.html"
+                target="contentIframe"
+                color="warning"
+              />
+            </Box>
+
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-              <ButtonMenu label="Advertencia" url={urls[0]} />
+              {/* <ButtonMenu label="Advertencia" url={urls[0]} /> */}
               <ButtonMenu icon={RiPrinterFill} printData />
-              <ButtonMenu label="VIN" url={urls[1]} />
+              {/* <ButtonMenu label="VIN" url={urls[1]} /> */}
               <ThemeToggle mode={mode} setMode={setMode} />
-              <ButtonMenu profile url="https://c-rom.site/" avatarSrc="/images/profiledev.png" avatarAlt="Christian Romero" />
+              {/* <ButtonMenu profile url="https://c-rom.site/" avatarSrc="/images/profiledev.png" avatarAlt="Christian Romero" /> */}
             </Box>
           </Toolbar>
         </AppBar>
@@ -88,7 +107,7 @@ const HomePage = ({ mode, setMode }) => {
               width: '100%',
               height: '100%',
               border: 0,
-              colorScheme: 'normal' // 🟢 PROTEGE EL CONTENIDO DEL IFRAME DE FILTROS AUTOMÁTICOS
+              colorScheme: 'normal'
             }}
           />
         </Box>
