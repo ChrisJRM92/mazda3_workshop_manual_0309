@@ -29,7 +29,6 @@ import { bodyWorkGroups } from './bodyWorkGroups';
 import { GoChecklist } from "react-icons/go";
 import { MdElectricBolt } from "react-icons/md";
 import { FaInfoCircle } from "react-icons/fa";
-import { FaGears } from "react-icons/fa6";
 
 
 export const manualSections = [
