@@ -28,6 +28,8 @@ import { airGroups } from './airGroups';
 import { bodyWorkGroups } from './bodyWorkGroups';
 import { GoChecklist } from "react-icons/go";
 import { MdElectricBolt } from "react-icons/md";
+import { FaInfoCircle } from "react-icons/fa";
+
 
 export const manualSections = [
     {
@@ -51,7 +53,7 @@ export const manualSections = [
         groups: brakesGroups,
     },
     {
-        id: 'differential', type: 'section', label: 'Diferencial', icon: MdAllInclusive,
+        id: 'differential', type: 'section', label: 'Diferencial', icon: FaGears,
         groups: diferChangeGroups,
     },
     {
@@ -85,5 +87,8 @@ export const manualSections = [
     },
     {
         id: 'electric-manual', type: 'link', label: 'Diagrama Electrico', icon: MdElectricBolt, href: '/content/pdfViewerJS/web/viewer.html?file=/content/manuals/2006-mazda3-facelift-wiring-diagram.pdf',
+    },
+    {
+        id: 'about', type: 'link', label: 'Acerca de', icon: FaInfoCircle, href: '/content/about.html',
     },
 ]

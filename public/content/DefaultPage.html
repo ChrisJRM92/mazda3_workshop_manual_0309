@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,21 @@
   <!-- Tipografía Google Fonts & FontAwesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/db200e48e3.js" crossorigin="anonymous"></script>
 
   <style>
     :root {
       color-scheme: light;
       --primary-color: #0956d2;
+      --primary-dark: #073e9e;
       --text-main: #2c3e50;
       --text-muted: #7f8c8d;
       --card-bg: #ffffff;
       --page-bg: #f8fafc;
+      --border-soft: #e2e8f0;
     }
 
     * {
@@ -43,6 +48,7 @@
 
     /* Tarjeta contenedora elevada */
     .card-container {
+      position: relative;
       background: var(--card-bg);
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
@@ -54,7 +60,31 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      transition: transform 0.2s ease;
+      overflow: hidden;
+    }
+
+    /* Franja superior de acento */
+    .card-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+    }
+
+    /* 🖼️ Imagen de Legado Japonés (Esquina Superior Izquierda) - Agrandada */
+    .japan-heritage-img {
+      position: absolute;
+      top: 1rem;
+      left: 1.25rem;
+      width: 80px;
+      /* Agrandada de 50px */
+      height: 80px;
+      /* Agrandada de 50px */
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
     }
 
     /* Insignia / Badge técnico */
@@ -70,6 +100,20 @@
       text-transform: uppercase;
       padding: 6px 14px;
       border-radius: 20px;
+      margin-bottom: 1.25rem;
+    }
+
+    .title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 0.3rem;
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--text-muted);
       margin-bottom: 1.5rem;
     }
 
@@ -82,8 +126,16 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.75rem;
       filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.06));
+    }
+
+    .model-tag {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.3px;
+      margin-bottom: 1.5rem;
     }
 
     /* Separador sutil */
@@ -96,15 +148,103 @@
       opacity: 0.8;
     }
 
+    /* Aviso de impresión */
+    .note-box {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      background-color: rgba(9, 86, 210, 0.05);
+      border: 1px solid rgba(9, 86, 210, 0.15);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    .note-box i {
+      color: var(--primary-color);
+      margin-top: 2px;
+      font-size: 0.9rem;
+    }
+
+    .note-box p {
+      font-size: 0.8125rem;
+      line-height: 1.55;
+      color: var(--text-main);
+      font-weight: 400;
+    }
+
+    .note-box p strong {
+      font-weight: 600;
+    }
+
+    /* Botones de acción */
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      width: 100%;
+      margin-bottom: 1.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      border-radius: 10px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(9, 86, 210, 0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(9, 86, 210, 0.32);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-muted);
+      border: 1px solid var(--border-soft);
+      font-weight: 500;
+    }
+
+    .btn-secondary:hover {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid rgba(9, 86, 210, 0.35);
+      outline-offset: 2px;
+    }
+
     /* Sección de textos de copyright */
     .disclaimer-group {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border-soft);
+      width: 100%;
     }
 
     .paragraph {
-      font-size: 0.8125rem; /* 13px */
+      font-size: 0.8125rem;
       line-height: 1.6;
       color: var(--text-muted);
       font-weight: 400;
@@ -125,9 +265,23 @@
         padding: 1.75rem 1.25rem;
       }
 
+      /* Ajuste de logo grande en móviles */
+      .japan-heritage-img {
+        top: 0.75rem;
+        left: 0.75rem;
+        width: 48px;
+        /* Agrandada proporcionalmente en móviles (de 24px) */
+        height: 48px;
+        /* Agrandada proporcionalmente en móviles (de 24px) */
+      }
+
       .hero-image {
         height: 160px;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .title {
+        font-size: 1.2rem;
       }
 
       .paragraph {
@@ -136,30 +290,64 @@
     }
   </style>
 </head>
+
 <body>
 
   <main class="card-container">
+    <!-- 🖼️ Imagen de Legado Japonés (Ahora más grande vía CSS) -->
+    <img src="../images/SELLO-LEGADO-JAPONES.webp" alt="Legado Japonés" class="japan-heritage-img" />
+
     <!-- Badge decorativo -->
     <div class="badge">
       <i class="fa-solid fa-book-open"></i>
       <span>Manual de Taller</span>
     </div>
 
+    <h1 class="title">Manual de Taller Mazda 3</h1>
+    <p class="subtitle">Manual técnico oficial, adaptado para consulta en Android y web.</p>
+
     <!-- Imagen del vehículo -->
     <div class="hero-image" role="img" aria-label="Mazda 3 2003-2007"></div>
+    <p class="model-tag">Primera generación (BK) · 2003 – 2007</p>
 
     <div class="divider"></div>
+
+    <!-- Aviso sobre impresión -->
+    <div class="note-box">
+      <i class="fa-solid fa-print"></i>
+      <p>
+        Para <strong>imprimir</strong> cualquier información del manual, es necesario
+        abrirlo en un <strong>navegador externo</strong> (fuera de esta ventana), ya
+        que la vista integrada no habilita la función de impresión del navegador.
+      </p>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="btn-group">
+      <a class="btn btn-primary" href="https://mazda3-workshop-manual-0309-git-main-christian-rs-projects.vercel.app/"
+        target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        Abrir desde navegador externo
+      </a>
+      <a class="btn btn-secondary" href="https://c-rom.site/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-code"></i>
+        Desarrollado por: Christian R.
+      </a>
+    </div>
 
     <!-- Leyendas de propiedad -->
     <div class="disclaimer-group">
       <p class="paragraph">
-        <strong>*Mazda</strong>, el logotipo y el nombre son propiedad exclusiva de <strong>Mazda Motor Corporation</strong>. Todos los derechos reservados.
+        <strong>*Mazda</strong>, el logotipo y el nombre son propiedad exclusiva de <strong>Mazda Motor
+          Corporation</strong>. Todos los derechos reservados.
       </p>
       <p class="paragraph">
-        <strong>*Mazda</strong> logo and name are property of <strong>Mazda Motor Corporation</strong>. All rights reserved.
+        <strong>*Mazda</strong> logo and name are property of <strong>Mazda Motor Corporation</strong>. All rights
+        reserved.
       </p>
     </div>
   </main>
 
 </body>
+
 </html>
