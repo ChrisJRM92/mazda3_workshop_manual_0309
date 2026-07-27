@@ -17,32 +17,37 @@ const LOGOS = {
     }
 }
 
-const Sidebar = ({ collapsed, onExpandRequest, mode = 'dark' }) => {
+const Sidebar = ({ collapsed, onExpandRequest, mode = 'dark', onNavigate }) => {
     const [selectedHref, setSelectedHref] = useState(null)
 
     const currentLogos = LOGOS[mode] || LOGOS.dark
 
+    const handleSelect = (href) => {
+        setSelectedHref(href)
+        onNavigate?.()
+    }
+
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
             {/* Cabecera del Sidebar */}
-            <Toolbar 
-                component="a" 
-                href="/content/DefaultPage.html" 
-                target="contentIframe" 
+            <Toolbar
+                component="a"
+                href="/content/DefaultPage.html"
+                target="contentIframe"
                 sx={{ display: 'flex', justifyContent: 'center', gap: 1, px: 1 }}
             >
-                <Box 
-                    component="img" 
-                    src={collapsed ? currentLogos.icon : currentLogos.text1} 
-                    alt="Mazda" 
-                    sx={{ height: collapsed ? 40 : 48, objectFit: 'contain' }} 
+                <Box
+                    component="img"
+                    src={collapsed ? currentLogos.icon : currentLogos.text1}
+                    alt="Mazda"
+                    sx={{ height: collapsed ? 40 : 48, objectFit: 'contain' }}
                 />
                 {!collapsed && (
-                    <Box 
-                        component="img" 
-                        src={currentLogos.text2} 
-                        alt="Mazda 3" 
-                        sx={{ height: 48, objectFit: 'contain' }} 
+                    <Box
+                        component="img"
+                        src={currentLogos.text2}
+                        alt="Mazda 3"
+                        sx={{ height: 48, objectFit: 'contain' }}
                     />
                 )}
             </Toolbar>
@@ -66,7 +71,7 @@ const Sidebar = ({ collapsed, onExpandRequest, mode = 'dark' }) => {
                                 collapsed={collapsed}
                                 onExpandRequest={onExpandRequest}
                                 selectedHref={selectedHref}
-                                onSelect={setSelectedHref}
+                                onSelect={handleSelect}
                             />
                         )
                     }
@@ -76,12 +81,12 @@ const Sidebar = ({ collapsed, onExpandRequest, mode = 'dark' }) => {
                         <React.Fragment key={item.id}>
                             {/* 🟢 OPCIÓN 2: Si el elemento actual es el 'manual_usuario', pone un divisor automáticamente antes */}
                             {item.id === 'manual_usuario' && <Divider sx={{ my: 1.5 }} />}
-                            
+
                             <SimpleLink
                                 item={item}
                                 collapsed={collapsed}
                                 selected={selectedHref === item.href}
-                                onSelect={setSelectedHref}
+                                onSelect={handleSelect}
                             />
                         </React.Fragment>
                     )

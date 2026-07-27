@@ -17,7 +17,6 @@ const HomePage = ({ mode, setMode }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   const [collapsed, setCollapsed] = useState(false)
-  const [mobileOpen, setMobileOpen] = useState(false)
 
   const urls = [
     '/content/esicont/es/engine/A01/html/B3E000000001201.html',
@@ -25,37 +24,63 @@ const HomePage = ({ mode, setMode }) => {
     '/content/DefaultPage.html',
   ]
 
-  const handleMenuClick = () => (isMobile ? setMobileOpen((p) => !p) : setCollapsed((p) => !p))
+  const handleMenuClick = () => setCollapsed((p) => !p)
   const handleExpandRequest = () => setCollapsed(false)
 
-  const currentDrawerWidth = isMobile ? DRAWER_WIDTH : (collapsed ? DRAWER_WIDTH_COLLAPSED : DRAWER_WIDTH)
+  // En mobile el layout SIEMPRE reserva solo el ancho angosto (rail de íconos).
+  // El ancho expandido en mobile se maneja como overlay flotante, no afecta el layout.
+  const layoutDrawerWidth = isMobile
+    ? DRAWER_WIDTH_COLLAPSED
+    : (collapsed ? DRAWER_WIDTH_COLLAPSED : DRAWER_WIDTH)
+
+  const isMobileExpanded = isMobile && !collapsed
 
   return (
     <Box sx={{ display: 'flex', height: '100vh' }}>
       <Drawer
-        variant={isMobile ? 'temporary' : 'permanent'}
-        open={isMobile ? mobileOpen : true}
-        onClose={() => setMobileOpen(false)}
-        ModalProps={{ keepMounted: true }}
+        variant="permanent"
+        open
         sx={{
-          width: currentDrawerWidth,
+          width: layoutDrawerWidth,
           flexShrink: 0,
           whiteSpace: 'nowrap',
           transition: theme.transitions.create('width'),
           '& .MuiDrawer-paper': {
-            width: currentDrawerWidth,
+            width: isMobileExpanded ? DRAWER_WIDTH : layoutDrawerWidth,
             boxSizing: 'border-box',
             overflowX: 'hidden',
             transition: theme.transitions.create('width'),
+            ...(isMobileExpanded && {
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              height: '100%',
+              zIndex: theme.zIndex.drawer + 2,
+              boxShadow: 6,
+            }),
           },
         }}
       >
         <Sidebar
-          collapsed={!isMobile && collapsed}
+          collapsed={collapsed}
           onExpandRequest={handleExpandRequest}
           mode={mode}
+          onNavigate={() => isMobile && setCollapsed(true)}
         />
       </Drawer>
+
+      {/* Backdrop: click afuera cierra el sidebar expandido en mobile */}
+      {isMobileExpanded && (
+        <Box
+          onClick={() => setCollapsed(true)}
+          sx={{
+            position: 'fixed',
+            inset: 0,
+            bgcolor: 'rgba(0,0,0,0.5)',
+            zIndex: theme.zIndex.drawer + 1,
+          }}
+        />
+      )}
 
       <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', minWidth: 0 }}>
         <AppBar position="static" color="inherit" elevation={1}>
@@ -72,7 +97,7 @@ const HomePage = ({ mode, setMode }) => {
                 target="contentIframe"
               />
 
-              {/* 🟢 Botón DTCs corregido: label siempre presente */}
+              {/* Botón DTCs */}
               <ButtonMenu
                 icon={BiSolidError}
                 label="DTCs"
